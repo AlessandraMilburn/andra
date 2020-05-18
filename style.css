@@ -1,0 +1,172 @@
+/*
+    Theme Name: Andra by AM
+    Author: Alessandra Milburn
+    Version: 1.0
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+
+}
+
+html,
+body {
+  font-family: 'Luckiest Guy';
+  background: #ffffff;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main,
+footer {
+  margin-left: 90px;
+  padding: 0px;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+/*-----------------------------------------------------typography*/
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+p {
+  font-family: 'Roboto';
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px;
+}
+
+span,
+a {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*-----------------------------------------------------colors*/
+
+.white {
+  color: #ffffff;
+}
+
+.black {
+  color: #333333;
+}
+
+.pink {
+  color: #F9D8D1;
+}
+
+.bg-pink {
+  background-color: #F9D8D1;
+}
+
+.bg-grey {
+  background-color: #E5E5E5;
+}
+
+.bg-black {
+  background-color: #333333;
+}
+
+/*-----------------------------------------------------containers*/
+
+
+/*-----------------------------------------------------spacing*/
+
+
+/*-----------------------------------------------------borders*/
+
+
+/*-----------------------------------------------------alignments*/
+
+
+
+/*-----------------------------------------------------hovers*/
+
+
+
+/*-----------------------------------------------------MENU NAV*/
+
+header {
+  height: 150px;
+}
+#nav {
+  background-image: url('http://andra.local/wp-content/uploads/2020/05/header-bg.png'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#logo {
+  padding: 0% 10%;
+}
+
+.custom-logo {
+  width: 179px;
+  height: 84px;
+}
+
+.announcement {
+  text-align: center;
+  align-self: center;
+  width: 100%;
+  margin: 0% 0%;
+  padding: .25% 0%;
+}
+
+
+/* ------------------------------------------------------------------*/
+/* -------------------------------------------------------------PAGES*/
+/* ------------------------------------------------------------------*/
+
+
+
+/* ------------------------------------------------------------------*/
+/* --------------------------------------------------------------POST*/
+/* ------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------*/
+/* ----------------------------------------------------RESPONSIVENESS*/
+/* ------------------------------------------------------------------*/
