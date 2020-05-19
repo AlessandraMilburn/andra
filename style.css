@@ -16,8 +16,10 @@
 
 html,
 body {
-  font-family: 'Luckiest Guy';
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
   background: #ffffff;
+  color: #333333;
   height: 100%;
 }
 
@@ -28,7 +30,6 @@ body {
 
 main,
 footer {
-  margin-left: 90px;
   padding: 0px;
 }
 
@@ -41,6 +42,12 @@ footer {
 }
 /*-----------------------------------------------------typography*/
 
+
+/* FONTS
+* font-family: 'Cabin', sans-serif;
+* font-family: 'Source Sans Pro', sans-serif;
+*/
+
 h1 {
   font-size: 50px;
 }
@@ -50,6 +57,7 @@ h2 {
 }
 
 h3 {
+  font-family: 'Cabin', sans-serif;
   font-size: 32px;
 }
 
@@ -58,30 +66,42 @@ h4 {
 }
 
 h5 {
-  font-size: 24px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 25px;
 }
 
 h6 {
-  font-size: 22px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px;
 }
 
 p {
-  font-family: 'Roboto';
+  font-family: 'Source Sans Pro', 'sans-serif';
   font-size: 16px;
   padding: 0px;
   margin: 0px;
 }
 
-span,
 a {
   padding: 0px;
   margin: 0px;
   text-decoration: none;
-  color: #ffffff;
+  cursor: pointer;
 }
 
 ul {
   list-style-type: none;
+}
+
+.reg-text {
+  font-weight: 400;
+
+}.bold-text {
+  font-weight: 700;
+}
+
+.pink-hl {
+  background: linear-gradient(to top, #F9D8D1 50%, transparent 50%);
 }
 
 /*-----------------------------------------------------colors*/
@@ -110,14 +130,30 @@ ul {
   background-color: #333333;
 }
 
-/*-----------------------------------------------------containers*/
+/*-----------------------------------------------------states*/
+
+.hover li:hover,
+.hover span:hover {
+  background: linear-gradient(to top, #F9D8D1 50%, transparent 50%);
+}
 
 
 /*-----------------------------------------------------spacing*/
 
+.space-between {
+  justify-content: space-between;
+}
+/*-----------------------------------------------------images*/
 
-/*-----------------------------------------------------borders*/
+img{
+  width: 100%;
+  height: 100%;
+}
 
+.autocrop {
+  overflow: hidden;
+
+}
 
 /*-----------------------------------------------------alignments*/
 
@@ -127,13 +163,17 @@ ul {
 
 
 
-/*-----------------------------------------------------MENU NAV*/
+/* HEADER & NAV
+*
+* 
+*/
 
 header {
   height: 150px;
 }
+
 #nav {
-  background-image: url('http://andra.local/wp-content/uploads/2020/05/header-bg.png'); 
+  background-image: url('/wp-content/uploads/2020/05/header-bg.png'); 
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -156,15 +196,42 @@ header {
 }
 
 
+/* COMPONENTS
+*
+* 
+*/
+
+#payment-methods img {
+  width: 40px;
+  margin: 0% 1%;
+}
+
+/* HEADER & NAV
+*
+* 
+*/
 /* ------------------------------------------------------------------*/
-/* -------------------------------------------------------------PAGES*/
+/* -------------------------------------------------------------SINGLE PRODUCT */
 /* ------------------------------------------------------------------*/
 
 
 
+.price {
+  color: #333333;
+  font-family: 'Source Sans Pro' sans-serif;
+  font-size: 18px;
+  margin: 1rem 0rem;
+}
+
+.heart {
+  font-size: 25px;
+	color:red;
+}
+
 /* ------------------------------------------------------------------*/
-/* --------------------------------------------------------------POST*/
+/* --------------------------------------------------------------PROMO*/
 /* ------------------------------------------------------------------*/
+
 
 
 /* ------------------------------------------------------------------*/

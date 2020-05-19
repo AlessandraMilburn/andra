@@ -27,19 +27,27 @@
           </div>
           <div class="col-4"></div>
         </div>
-        <ul class="row mb-0 py-1">
+        <div class="row mb-0 py-1">
         <!-- wp_nav_menu( array( 'theme_location' => 'header-menu' ) );?-->
-          <li class="col-1"></li>
-          <li class="col-1">NEW IN</li>  
-          <li class="col-1">DRESSES</li>  
-          <li class="col-1">JUMPSUITS</li>  
-          <li class="col-1">TOPS</li>  
-          <li class="col-1">BOTTOMS</li>  
-          <li class="col-1">JEWELRY</li>  
-          <li class="col-1">SWIM</li>  
-          <li class="col-1">SALE</li>  
-          <li class="col-2">SEARCH BAR</li>
-        </ul>
+          <div class="col-2"></div>
+          <div class="col-8">
+            <div class="conainer-fluid">
+              <ul class="row text-center space-between mb-0 hover">
+                <li><a>NEW IN</a></li>  
+                <li><a>DRESSES</a></li>  
+                <li><a>JUMPSUITS</a></li>  
+                <li><a>TOPS</a></li>  
+                <li><a>BOTTOMS</a></li>  
+                <li><a>JEWELRY</a></li>  
+                <li><a>SWIM</a></li>  
+                <li><a>SALE</a></li>  
+                <li>SEARCH BAR</a></li>  
+              </ul>     
+            </div>  
+          <div>
+          <div class="col-2"><div>
+          </div>
+        </div>
       </nav>
 
       <!--ANNOUNCEMENT SECTION-->
