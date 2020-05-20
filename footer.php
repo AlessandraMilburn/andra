@@ -24,12 +24,12 @@
           </ul>        
         <div class="col-5 p-3 text-center">
           <b>FOLLOW US</b>
-            <div class="row">
+            <div class="row social">
               <div class="col-4"></div>
-              <div class="col-1"><img/></div>
-              <div class="col-1"><img/></div>
-              <div class="col-1"><img/></div>
-              <div class="col-1"><img/></div>
+              <div class="col-1"><a target="_blank" href="https://www.facebook.com/AndraUAE/"><img src="/wp-content/uploads/2020/05/Facebook.svg"/></a></div>
+              <div class="col-1"><a><img src="/wp-content/uploads/2020/05/Twitter.svg"/></a></div>
+              <div class="col-1"><a><img src="/wp-content/uploads/2020/05/Instagram-filled.svg"/></a></div>
+              <div class="col-1"><a><img src="/wp-content/uploads/2020/05/Youtube.svg"/></a></div>
               <div class="col-4"></div>
             </div>
             <br>

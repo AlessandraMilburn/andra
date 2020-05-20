@@ -58,7 +58,7 @@ h2 {
 
 h3 {
   font-family: 'Cabin', sans-serif;
-  font-size: 32px;
+  font-size: px;
 }
 
 h4 {
@@ -87,12 +87,16 @@ a {
   margin: 0px;
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
 }
 
 ul {
   list-style-type: none;
 }
 
+.light-text {
+  font-weight: 300;
+}
 .reg-text {
   font-weight: 400;
 
@@ -101,13 +105,20 @@ ul {
 }
 
 .pink-hl {
-  background: linear-gradient(to top, #F9D8D1 50%, transparent 50%);
+  background: linear-gradient(to top, #F9D8D1 30%, transparent 50%);
 }
 
-/*-----------------------------------------------------colors*/
+/* COLORS
+*
+* 
+*/
 
 .white {
   color: #ffffff;
+}
+
+.grey {
+  color: #696969;
 }
 
 .black {
@@ -117,6 +128,12 @@ ul {
 .pink {
   color: #F9D8D1;
 }
+
+.red {
+  color: red;
+}
+
+
 
 .bg-pink {
   background-color: #F9D8D1;
@@ -134,15 +151,27 @@ ul {
 
 .hover li:hover,
 .hover span:hover {
-  background: linear-gradient(to top, #F9D8D1 50%, transparent 50%);
+  background: linear-gradient(to top, #F9D8D1 30%, transparent 50%);
+}
+
+.nav-button a:hover {
+  color: #333333;
+  text-decoration: none;
 }
 
 
 /*-----------------------------------------------------spacing*/
 
 .space-between {
+  display: flex;
   justify-content: space-between;
 }
+
+/*-----------------------------------------------------sizing*/
+.h-20 {
+  height: 20%;
+}
+
 /*-----------------------------------------------------images*/
 
 img{
@@ -155,11 +184,11 @@ img{
 
 }
 
+.social img {
+  width: 20px;
+}
+
 /*-----------------------------------------------------alignments*/
-
-
-
-/*-----------------------------------------------------hovers*/
 
 
 
@@ -206,26 +235,39 @@ header {
   margin: 0% 1%;
 }
 
-/* HEADER & NAV
+
+/* SINGLE PRODUCT
 *
 * 
 */
-/* ------------------------------------------------------------------*/
-/* -------------------------------------------------------------SINGLE PRODUCT */
-/* ------------------------------------------------------------------*/
 
-
+.single-product a:hover {
+  text-decoration: none;
+}
 
 .price {
   color: #333333;
   font-family: 'Source Sans Pro' sans-serif;
   font-size: 18px;
-  margin: 1rem 0rem;
+  
 }
 
 .heart {
   font-size: 25px;
 	color:red;
+}
+
+/* Filter
+*
+* 
+*/
+
+.size button {
+  width: 40%;
+  padding: 2% 4%;
+  margin: 1%;
+  border: #696969 solid .5px;
+
 }
 
 /* ------------------------------------------------------------------*/

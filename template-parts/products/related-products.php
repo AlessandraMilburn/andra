@@ -1,8 +1,8 @@
 <!--INSERT CODE-->
-<section class="container text-center ">
+<section class="container text-center mb-3">
   <h5 class="text-uppercase bold-text my-4">
     <span class="pink-hl">&nbsp;
-      Clothing and Accessories 
+      Related Products 
     &nbsp;</span>
   </h5>
   <div class="row">
@@ -35,9 +35,6 @@
     </p>
     <?php endif; ?>
   </div> <!--Item row-->
-  <button class="white bg-black px-5 py-2">
-    SHOP NOW
-  </button
 
 </section> <!--section-->
 

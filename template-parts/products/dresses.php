@@ -26,31 +26,7 @@
 
   <!--SINGLE PRODUCT start-->
     <div class="col-3">
-      <a href="<?php the_permalink(); ?>">
-      <div>
-        <i class="heart fa fa-heart-o"></i>
-      </div>
-        <!--PRODUCT IMAGE-->
-        <div id="single-product" class="m-2 p-2">
-          <?php the_post_thumbnail(); ?>
-        </div>
-
-        <!--Product Name-->
-        <h6 class="black text-uppercase m-0 hover">
-          <span><?php the_title();  ?></span>
-        </h6>
-
-        <!--Short Description-->
-        <div class="black">
-          <?php the_excerpt(); ?>
-        </div>
-
-        <!--Price--> 
-        <p class="price">$
-          <?php echo $product->get_price();?>
-        </p>
-        
-      </a>
+      <?php get_template_part( 'template-parts/products/single-product', 'page' ); ?>
     </div><!--Item column-->
   <!--SINGLE PRODUCT end-->
 

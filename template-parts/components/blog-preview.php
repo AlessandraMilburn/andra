@@ -1,20 +1,22 @@
-<div class="container">
-  <div class="row">
-    <div class="col-6">
-      <img src="/wp-content/uploads/2020/05/promo-image.png"/>
+<div class="container my-5">
+  <div class="row h-auto">
+    <div class="col-6 flex-wrap">
+      <img class="pb-3" src="/wp-content/uploads/2020/05/promo-image.png"/>
     </div>
     <div class="col-2">
-      <div class="d-flex flex-column bd-highlight mb-3">
-        <img class="pb-2 d-flex align-items-stretch" src="/wp-content/uploads/2020/05/promo-image.png"/>
-        <img class="pb-2 d-flex align-items-end"src="/wp-content/uploads/2020/05/promo-image.png"/>
-      </div>      
+      <img class="h-50 mb-3" src="/wp-content/uploads/2020/05/promo-image.png"/>
+      <img class="h-50" src="/wp-content/uploads/2020/05/promo-image.png"/>
     </div>
     <div class="col-4">
-      <img src="/wp-content/uploads/2020/05/promo-image.png"/>
+      <img class="h-75 mb-3" src="/wp-content/uploads/2020/05/promo-image.png"/>
+      <img class="h-25" src="/wp-content/uploads/2020/05/promo-image.png"/>
     </div>
   </div>  
-  <div class="row my-3 text-left">
-    <div class="col-4">
+
+
+
+  <div class="row my-3">
+    <div class="col-4 text-left">
       <h3><span class="pink-hl">&nbsp; BLOG & PR &nbsp;</span></h3>
     </div>
     <div class="col-8 text-right">
