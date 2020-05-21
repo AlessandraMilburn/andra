@@ -1,30 +1,23 @@
 <!--INSERT CODE-->
-<section class="container text-center ">
-
+<section class="container text-center mb-3">
   <div class="row">
   <?php
   //assigns variable to display 5 product post types in a page
   $params = array(
+    'posts_per_page' => 4,
     'post_type' => 'product');
   $wc_query = new WP_Query($params);
 
   //checks if there are products and will display the post if available
   if ($wc_query->have_posts()) : 
     while ($wc_query->have_posts()) : 
-  $wc_query->the_post();
+  $wc_query->the_post(); ?>
 
-  //Product Variable
-  $product = get_product(get_the_ID()); ?>
+
 
   <!--SINGLE PRODUCT start-->
-    <div class="col-4 mb-5">
-      <div class="mb-2">
-      <?php get_template_part( 'template-parts/products/single-product', 'page' ); ?>
-      </div>
-      <form class="cart " method="post" enctype="multipart/form-data">
-        <input type="hidden" name="add-to-cart" value="<?php echo esc_attr($product->id); ?>">
-        <button class="bg-black white py-2 px-4 light-text" type="submit"> <?php echo $product->single_add_to_cart_text(); ?> </button>
-      </form>
+    <div class="col-3">
+      <?php get_template_part( 'template-parts/product-previews/single-product', 'page' ); ?>
     </div><!--Item column-->
   <!--SINGLE PRODUCT end-->
 

@@ -69,6 +69,8 @@ function andra_files() {
 
   //Javascript
   wp_enqueue_script('favorites', get_template_directory_uri() . '/js/favorites.js', null, null, true);
+  wp_enqueue_script('switch-visible', get_template_directory_uri() . '/js/switch-visible.js', null, null, true);
+
 }
 add_action('wp_enqueue_scripts', 'andra_files');
 

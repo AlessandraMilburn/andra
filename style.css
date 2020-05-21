@@ -40,8 +40,11 @@ main {
 footer {
   flex-shrink: 0;
 }
-/*-----------------------------------------------------typography*/
 
+/*********************** STYLE BY ELEMENT 
+*
+* 
+*/
 
 /* FONTS
 * font-family: 'Cabin', sans-serif;
@@ -82,6 +85,10 @@ p {
   margin: 0px;
 }
 
+.xs-text {
+  font-size: 12px;
+}
+
 a {
   padding: 0px;
   margin: 0px;
@@ -108,6 +115,7 @@ ul {
   background: linear-gradient(to top, #F9D8D1 30%, transparent 50%);
 }
 
+
 /* COLORS
 *
 * 
@@ -117,6 +125,9 @@ ul {
   color: #ffffff;
 }
 
+.light-grey {
+  color: #696969;
+}
 .grey {
   color: #696969;
 }
@@ -133,8 +144,6 @@ ul {
   color: red;
 }
 
-
-
 .bg-pink {
   background-color: #F9D8D1;
 }
@@ -147,7 +156,14 @@ ul {
   background-color: #333333;
 }
 
-/*-----------------------------------------------------states*/
+.bg-transparent {
+  background: transparent;
+}
+
+/* STATES
+*
+* 
+*/
 
 .hover li:hover,
 .hover span:hover {
@@ -159,20 +175,43 @@ ul {
   text-decoration: none;
 }
 
+.hide {
+  display: none;
+}
 
-/*-----------------------------------------------------spacing*/
+/* SPACING
+*
+* 
+*/
 
 .space-between {
   display: flex;
   justify-content: space-between;
 }
 
-/*-----------------------------------------------------sizing*/
+/* SIZING
+*
+* 
+*/
+
 .h-20 {
   height: 20%;
 }
 
-/*-----------------------------------------------------images*/
+
+/* CONTAINERS
+*
+* 
+*/
+
+
+
+
+
+/* IMAGES
+*
+* 
+*/
 
 img{
   width: 100%;
@@ -188,9 +227,10 @@ img{
   width: 20px;
 }
 
-/*-----------------------------------------------------alignments*/
-
-
+/*********************** STYLE BY SECTION
+*
+* 
+*/
 
 /* HEADER & NAV
 *
@@ -268,6 +308,16 @@ header {
   margin: 1%;
   border: #696969 solid .5px;
 
+}
+
+/* Select Form
+*
+* 
+*/
+
+
+select {
+  color: black;
 }
 
 /* ------------------------------------------------------------------*/

@@ -20,3 +20,5 @@ function reveal() {
     x[i].style.display = "block";
   }
 };
+
+

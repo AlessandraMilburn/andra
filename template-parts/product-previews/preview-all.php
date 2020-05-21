@@ -1,8 +1,8 @@
 <!--INSERT CODE-->
-<section class="container text-center mb-3">
+<section class="container text-center ">
   <h5 class="text-uppercase bold-text my-4">
     <span class="pink-hl">&nbsp;
-      Recently Viewed 
+      Clothing and Accessories 
     &nbsp;</span>
   </h5>
   <div class="row">
@@ -16,13 +16,14 @@
   //checks if there are products and will display the post if available
   if ($wc_query->have_posts()) : 
     while ($wc_query->have_posts()) : 
-  $wc_query->the_post(); ?>
+  $wc_query->the_post();
 
-
+  //Product Variable
+  $product = get_product(get_the_ID()); ?>
 
   <!--SINGLE PRODUCT start-->
     <div class="col-3">
-      <?php get_template_part( 'template-parts/products/single-product', 'page' ); ?>
+      <?php get_template_part( 'template-parts/product-previews/single-product', 'page' ); ?>
     </div><!--Item column-->
   <!--SINGLE PRODUCT end-->
 
@@ -34,6 +35,9 @@
     </p>
     <?php endif; ?>
   </div> <!--Item row-->
+  <button class="white bg-black px-5 py-2">
+    SHOP NOW
+  </button
 
 </section> <!--section-->
 

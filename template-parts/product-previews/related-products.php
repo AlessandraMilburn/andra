@@ -1,10 +1,5 @@
 <!--INSERT CODE-->
 <section class="container text-center mb-3">
-  <h5 class="text-uppercase bold-text my-4">
-    <span class="pink-hl">&nbsp;
-      Related Products 
-    &nbsp;</span>
-  </h5>
   <div class="row">
   <?php
   //assigns variable to display 5 product post types in a page
@@ -23,7 +18,7 @@
 
   <!--SINGLE PRODUCT start-->
     <div class="col-3">
-      <?php get_template_part( 'template-parts/products/single-product', 'page' ); ?>
+      <?php get_template_part( 'template-parts/product-previews/single-product', 'page' ); ?>
     </div><!--Item column-->
   <!--SINGLE PRODUCT end-->
 
