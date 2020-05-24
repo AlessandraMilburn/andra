@@ -24,10 +24,8 @@ get_header(); ?>
     <!--ORDER SUMMARY SECTION-->
     <section class="col-4">
       <?php get_template_part( 'cart/order-summary', 'page' ); ?>
-    </section>
-    <!--PAYMENT METHODS SECTION-->
-    <section class="col-5">
-      <?php get_template_part( 'cart/payment-methods', 'page' ); ?>
+      <!--PAYMENT METHODS SECTION-->
+      <?php get_template_part( 'cart/payment-method-mini', 'page' ); ?>
     </section>
   </div>
   <div class="d-flex justify-content-center">

@@ -15,7 +15,7 @@
             <p>Product ID: 12345<?php the_ID(); ?></p>
           </div>
           <div class="col-4">
-            <p class="price bold-text">$
+            <p class="price bold-text">$253.00
             <!--?php 
             $product = get_product(get_the_ID());
             echo $product->get_price();?>-->

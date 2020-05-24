@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container border">
   <h6>ORDER SUMMARY</h6>
   <p>Subtotal <span>$123.00</span>
   <p>Shipping <span>$123.00</span>
