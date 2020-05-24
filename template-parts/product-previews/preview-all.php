@@ -37,7 +37,7 @@
   </div> <!--Item row-->
   <button class="white bg-black px-5 py-2">
     SHOP NOW
-  </button
+  </button>
 
 </section> <!--section-->
 

@@ -27,9 +27,20 @@
         </div>
       </div>
       <div class="col-4">
-        <div>Size:</div>
-        <div>Quantity:</div>
-        <div>Move to Wishlist</div>
+        <div>
+          <p>Size:</p>
+          <p><span class="bold-text">XS</span> <a><u>change</u></a></p>
+        </div>
+        <div class="my-2">
+          <p>Quantity:</p>
+          <p><span>-</span> <span class="bold-text">3</span> <span>+</span></p>
+        </div>
+        <div class="row ml-0">
+          <span>
+            <img src="/wp-content/uploads/2020/05/icon-heart.svg"/>
+          </span>&nbsp;
+          <a><u> Move to Wishlist</u></a>
+        </div>
       </div>
     
   </div>

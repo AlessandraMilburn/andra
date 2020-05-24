@@ -13,16 +13,16 @@ get_header(); ?>
   <!--PAGE TITLE-->
   <div class="text-center my-5">
     <h5 class="text-uppercase bold-text">
-      <span class="pink-hl">&nbsp;CART&nbsp;</span>
+      <span class="pink-hl">&nbsp;SHOPPING CART&nbsp;</span>
     </h5>
   </div>
   <!--PRODUCTS SECTION-->
   <div class="row">
-    <section class="col-8">
+    <section class="col-9">
       <?php get_template_part( 'cart/item-preview', 'page' ); ?>
     </section>
     <!--ORDER SUMMARY SECTION-->
-    <section class="col-4">
+    <section class="col-3">
       <?php get_template_part( 'cart/order-summary', 'page' ); ?>
       <!--PAYMENT METHODS SECTION-->
       <?php get_template_part( 'cart/payment-method-mini', 'page' ); ?>

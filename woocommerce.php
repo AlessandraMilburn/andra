@@ -61,7 +61,7 @@
         <!--Wishlist Button-->
         <div class="col-4 border rounded px-0">
           <button class="row h-100 m-0 p-2">
-            <span >Wishlist</span>&nbsp;
+            <span >Wishlist</span>
             <span>
               <img src="/wp-content/uploads/2020/05/icon-heart.svg"/>
             </span>
