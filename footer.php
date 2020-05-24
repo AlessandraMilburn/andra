@@ -9,7 +9,7 @@
         <div class="col-1"></div>
         <ul class="col-3 p-3">
           <b>CUSTOMER SERVICE</b>
-            <li><a>Contact Us</a></li>  
+            <li><a href="/customer-service/">Contact Us</a></li>  
             <li><a>Orders & Shipping</a></li>  
             <li><a>Terms & Conditions</a></li>  
             <li><a>FAQs</a></li>  
@@ -17,7 +17,7 @@
           </ul>
         <ul class="col-3 p-3">
           <b>ABOUT</b>
-            <li><a>About Us</a></li>  
+            <li><a href="/about-us/">About Us</a></li>  
             <li><a>Careers</a></li>  
             <li><a>Sitemap</a></li>  
             <li><a>Affiliate Program</a></li>  
