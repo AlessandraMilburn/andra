@@ -65,11 +65,11 @@ function andra_files() {
   wp_enqueue_style('andra_main_styles', get_stylesheet_uri());
 
   //Google Analytics
-  wp_enqueue_script('googleanalytics', get_template_directory_uri() . '/js/googleanalytics.js', null, null); 
+  wp_enqueue_script('googleanalytics', get_template_directory_uri() . '/assets/js/googleanalytics.js', null, null); 
 
   //Javascript
-  wp_enqueue_script('favorites', get_template_directory_uri() . '/js/favorites.js', null, null, true);
-  wp_enqueue_script('switch-visible', get_template_directory_uri() . '/js/switch-visible.js', null, null, true);
+  wp_enqueue_script('favorites', get_template_directory_uri() . '/assets/js/favorites.js', null, null, true);
+  wp_enqueue_script('switch-visible', get_template_directory_uri() . '/assets/js/switch-visible.js', null, null, true);
 
 }
 add_action('wp_enqueue_scripts', 'andra_files');

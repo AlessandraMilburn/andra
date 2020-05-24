@@ -1,13 +1,14 @@
 <?php
 
 /*
-* Template Name: Andra
+* Template Name: Blog
 * description: Template for Andra Woocommerce by Alessandra Milburn
 
 */
 
 get_header(); ?>
 
-<!--INSERT CODE-->
+<div class="container">
+
 
 <?php get_footer(); ?>

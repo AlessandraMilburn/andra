@@ -1,19 +1,11 @@
 <!--INSERT CODE-->
 <section class="container text-center ">
-  <h5 class="text-uppercase bold-text my-4">
-    <span class="pink-hl">&nbsp;
-      Accessories 
-    &nbsp;</span>
-  </h5>
+
   <div class="row">
   <?php
   //assigns variable to display 5 product post types in a page
   $params = array(
-    'post_type' => 'product',
-    'orderby' => 'post_date',
-    'category_name' => 'accessories'
-);
-    
+    'post_type' => 'product');
   $wc_query = new WP_Query($params);
 
   //checks if there are products and will display the post if available
@@ -25,8 +17,14 @@
   $product = get_product(get_the_ID()); ?>
 
   <!--SINGLE PRODUCT start-->
-    <div class="col-3">
-      <?php get_template_part( 'template-parts/products/single-product', 'page' ); ?>
+    <div class="col-4 mb-5">
+      <div class="mb-2">
+      <?php get_template_part( 'components/single-product', 'page' ); ?>
+      </div>
+      <form class="cart " method="post" enctype="multipart/form-data">
+        <input type="hidden" name="add-to-cart" value="<?php echo esc_attr($product->id); ?>">
+        <button class="bg-black white py-2 px-4 light-text" type="submit"> <?php echo $product->single_add_to_cart_text(); ?> </button>
+      </form>
     </div><!--Item column-->
   <!--SINGLE PRODUCT end-->
 
@@ -38,9 +36,6 @@
     </p>
     <?php endif; ?>
   </div> <!--Item row-->
-  <button class="white bg-black px-5 py-2">
-    SHOP NOW
-  </button
 
 </section> <!--section-->
 

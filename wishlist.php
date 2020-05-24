@@ -26,7 +26,7 @@ get_header(); ?>
   </div>
   <!--PRODUCTS SECTION start-->
   <div class="row">
-      <?php get_template_part( 'template-parts/product-previews/all-products', 'page' ); ?>
+      <?php get_template_part( 'components/all-products-loop', 'page' ); ?>
     </section>
   </div>
   <!--PRODUCT SECTION end-->

@@ -11,14 +11,13 @@
   //checks if there are products and will display the post if available
   if ($wc_query->have_posts()) : 
     while ($wc_query->have_posts()) : 
-  $wc_query->the_post();
+  $wc_query->the_post(); ?>
 
-  //Product Variable
-  $product = get_product(get_the_ID()); ?>
+
 
   <!--SINGLE PRODUCT start-->
     <div class="col-3">
-      <?php get_template_part( 'template-parts/product-previews/single-product', 'page' ); ?>
+      <?php get_template_part( 'components/single-product', 'page' ); ?>
     </div><!--Item column-->
   <!--SINGLE PRODUCT end-->
 

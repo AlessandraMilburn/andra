@@ -1,19 +1,11 @@
 <!--INSERT CODE-->
-<section class="container text-center ">
-  <h5 class="text-uppercase bold-text my-4">
-    <span class="pink-hl">&nbsp;
-      Dresses 
-    &nbsp;</span>
-  </h5>
+<section class="container text-center mb-3">
   <div class="row">
   <?php
   //assigns variable to display 5 product post types in a page
   $params = array(
-    'post_type' => 'product',
-    'orderby' => 'post_date',
-    'category_name' => 'dresses'
-    );
-
+    'posts_per_page' => 4,
+    'post_type' => 'product');
   $wc_query = new WP_Query($params);
 
   //checks if there are products and will display the post if available
@@ -26,7 +18,7 @@
 
   <!--SINGLE PRODUCT start-->
     <div class="col-3">
-      <?php get_template_part( 'template-parts/products/single-product', 'page' ); ?>
+      <?php get_template_part( 'components/single-product', 'page' ); ?>
     </div><!--Item column-->
   <!--SINGLE PRODUCT end-->
 
@@ -38,9 +30,6 @@
     </p>
     <?php endif; ?>
   </div> <!--Item row-->
-  <button class="white bg-black px-5 py-2">
-    SHOP NOW
-  </button
 
 </section> <!--section-->
 

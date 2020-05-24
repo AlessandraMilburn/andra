@@ -34,7 +34,7 @@ get_header(); ?>
     </button>
   </div>
   <section class="text-center">
-    <?php get_template_part( 'template-parts/product-previews/recentlyandrelated', 'page' ); ?>
+    <?php get_template_part( 'components/recentlyandrelated', 'page' ); ?>
   </section>
 </div>
 

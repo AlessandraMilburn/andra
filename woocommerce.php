@@ -61,7 +61,7 @@
         <!--Wishlist Button-->
         <div class="col-4 border rounded px-0">
           <button class="row h-100 m-0 p-2">
-            <span >Wishlist</span>
+            <span >Wishlist</span>&nbsp;
             <span>
               <img src="/wp-content/uploads/2020/05/icon-heart.svg"/>
             </span>
@@ -104,7 +104,7 @@
   </section>
   <!--Recently Viewed Section-->
   <section class="text-center">
-    <?php get_template_part( 'template-parts/product-previews/recentlyandrelated', 'page' ); ?>
+    <?php get_template_part( 'components/recentlyandrelated', 'page' ); ?>
   </section>
 </div>
 

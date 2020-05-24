@@ -28,13 +28,13 @@ get_header(); ?>
   <div class="row">
     <!--SORT & FILTER-->
     <section class="col-3 position-sticky">
-      <?php get_template_part( 'template-parts/components/sorter', 'page' ); ?>
+      <?php get_template_part( 'shop/sorter', 'page' ); ?>
       <br>
-      <?php get_template_part( 'template-parts/components/filter', 'page' ); ?>
+      <?php get_template_part( 'shop/filter', 'page' ); ?>
     </section>
     <!--PRODUCTS-->    
     <section class="col-9">
-      <?php get_template_part( 'template-parts/product-previews/all-products', 'page' ); ?>
+      <?php get_template_part( 'components/all-products-loop', 'page' ); ?>
     </section>
   </div>
   <!--PRODUCT SECTION end-->
@@ -44,7 +44,7 @@ get_header(); ?>
     <h5 class="text-uppercase bold-text my-4">
         <span class="pink-hl">&nbsp; Recently Viewed &nbsp;</span>
     </h5>
-    <?php get_template_part( 'template-parts/product-previews/recently-viewed', 'page' ); ?>
+    <?php get_template_part( 'components/recently-viewed', 'page' ); ?>
   </div>
 
 </div>
