@@ -51,7 +51,7 @@
       </nav>
 
       <!--ANNOUNCEMENT SECTION-->
-      <div class="announcement bg-grey">
+      <div class="announcement bg-light-grey">
         <p class="mb-0">Check out our new collection - just in! <a><u>Click here</u></a></p>
       </div>
     </header>
