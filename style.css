@@ -127,7 +127,7 @@ ul {
 }
 
 .light-grey {
-  color: #696969;
+  color: #E5E5E5;
 }
 .grey {
   color: #696969;
@@ -150,6 +150,10 @@ ul {
 }
 
 .bg-grey {
+  background-color: #696969;
+}
+
+.bg-light-grey {
   background-color: #E5E5E5;
 }
 
@@ -228,6 +232,10 @@ ul {
 
 .top-0 {
   top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
 }
 
 .ml--10 {
@@ -346,10 +354,12 @@ select {
   color: black;
 }
 
-/* BLOG
+/* USER PAGE
 *
 * 
 */
+
+
 
 
 
