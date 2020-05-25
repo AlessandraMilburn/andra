@@ -1,8 +1,8 @@
 </main>
 <!-------------footer---------------->
 
-<?php get_template_part( 'template-parts/components/newsletter', 'page' ); ?>
-<?php get_template_part( 'template-parts/components/payment-methods', 'page' ); ?>
+<?php get_template_part( 'components/newsletter', 'page' ); ?>
+<?php get_template_part( 'components/payment-methods', 'page' ); ?>
 
     <footer class="container-fluid bg-black white p-3">
       <div class="row">
