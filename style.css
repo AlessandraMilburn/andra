@@ -137,12 +137,19 @@ ul {
   color: #333333;
 }
 
+.light-pink {
+  color: #FFF8F8;
+}
 .pink {
   color: #F9D8D1;
 }
 
 .red {
   color: red;
+}
+
+.bg-light-pink {
+  background-color: #FFF8F8;
 }
 
 .bg-pink {
@@ -165,6 +172,9 @@ ul {
   background: transparent;
 }
 
+.border-pink {
+  border-color: #F9D8D1;
+}
 /* STATES
 *
 * 
@@ -182,6 +192,10 @@ ul {
 
 .hide {
   display: none;
+}
+
+.x-icon svg {
+ fill: #F9D8D1;
 }
 
 /* SPACING
