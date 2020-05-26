@@ -29,7 +29,7 @@ get_header(); ?>
     </section>
   </div>
   <div class="d-flex justify-content-center">
-    <button class="bg-grey py-2 px-3 m-3">
+    <button class="bg-light-grey py-2 px-3 m-3">
       <p>Continue Shopping</p>
     </button>
   </div>
