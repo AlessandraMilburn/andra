@@ -21,14 +21,31 @@
     <header>
       <nav class="container-fluid" id="nav">
         <div class="row">
-          <div class="col-4"></div>
-          <div class="col-4 navbar-brand" id="logo">
+          <div class="col-5"></div>
+          <div class="col-2 my-0" id="logo">
           <?php the_custom_logo(); ?>  
           </div>
-          <div class="col-4"></div>
+          <div class="col-2 p-0"></div>
+          <div class="col-3 ">
+            <div class="container py-3">
+              <div class="row d-flex justify-content-end">
+                <div class="col-3"></div>
+                <div class="col-1 p-0">
+                  <img src="/wp-content/uploads/2020/05/icon-user.svg"/>
+                </div>
+                <div class="col-1 p-0 mx-1">
+                  <img src="/wp-content/uploads/2020/05/icon-heart-1.svg"/>
+                </div>
+                <div class="col-1 p-0">
+                  <img src="/wp-content/uploads/2020/05/icon-cart.svg"/>
+                </div>
+                <div class="col-3 py-1 px-0">($123.00)</div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row mb-0 py-1">
-        <!-- wp_nav_menu( array( 'theme_location' => 'header-menu' ) );?-->
+          <!-- wp_nav_menu( array( 'theme_location' => 'header-menu' ) );?-->
           <div class="col-2"></div>
           <div class="col-8">
             <div class="container">

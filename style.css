@@ -295,9 +295,6 @@ header {
   background-size: 100% 100%;
 }
 
-#logo {
-  padding: 0% 10%;
-}
 
 .custom-logo {
   width: 179px;
@@ -374,7 +371,33 @@ select {
 */
 
 
+/* CART
+*
+* 
+*/
 
+.cart-contents:before {
+  content: "\e01d";
+  font-size:28px;
+  margin-top:10px;
+  font-style:normal;
+  font-weight:400;
+  padding-right:5px;
+  vertical-align: bottom;
+}
+.cart-contents:hover {
+  text-decoration: none;
+}
+.cart-contents-count {
+  color: #fff;
+  background-color: #2ecc71;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 1px 6px;
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: top;
+}
 
 
 

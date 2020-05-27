@@ -118,6 +118,28 @@ function mytheme_add_woocommerce_support() {
   add_theme_support( 'wc-product-gallery-lightbox' );
   add_theme_support( 'wc-product-gallery-slider' );
   add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
+
+  /**
+ * Ensure cart contents update when products are added to the cart via AJAX
+ */
+function my_header_add_to_cart_fragment( $fragments ) {
+ 
+  ob_start();
+  $count = WC()->cart->cart_contents_count;
+  ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php
+  if ( $count > 0 ) {
+      ?>
+      <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+      <?php            
+  }
+      ?></a><?php
+
+  $fragments['a.cart-contents'] = ob_get_clean();
+   
+  return $fragments;
+}
+add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment' );
 }
 
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
@@ -131,10 +153,13 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 function andra_features() {
 
   //header
+  // =============================================================================
   add_theme_support('title-tag');
   add_theme_support( 'custom-logo');
 
   //nav menu
+  // =============================================================================
+
   function register_my_menus() {
     //registers the menus
     register_nav_menus(
@@ -147,6 +172,8 @@ function andra_features() {
    add_action( 'init', 'register_my_menus' );
 
   //homepage
+  // =============================================================================
+
     $args = array(
       'flex-width'    => true,
       'width'         => 980,
@@ -156,10 +183,27 @@ function andra_features() {
   add_theme_support( 'custom-header', $args );
 
   //page
+  // =============================================================================
   add_theme_support( 'post-thumbnails' );  
+
+
+  // Displaying custom menu icons
+  // =============================================================================
+  function add_custom_menu_icons(){ ?>
+    
+    <div class="custom-menu">
+      <a href="#user" title="User"><img src="/wp-content/uploads/2020/05/icon-user.svg" alt="User"></a>
+      <a href="#wishlist" title="Wishlist"><img src="/wp-content/uploads/2020/05/icon-heart-1.svg" alt="Wishlist"></a>
+      <a href="#cart" title="Cart"><img src="/wp-content/uploads/2020/05/icon-cart.svg" alt="Cart"></a>
+      <a href="#search" title="Search"><img src="http://www.leemerritt.com/wp-content/uploads/2016/12/search.png" alt="Search"></a>
+    </div>
+
+  <?php }
+  add_action('x_after_view_global__brand', 'add_custom_menu_icons');
 }
 
  add_action('after_setup_theme', 'andra_features');
+
 
 
 
