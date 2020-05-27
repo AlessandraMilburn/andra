@@ -1,6 +1,10 @@
 </main>
 <!-------------footer---------------->
 
+<?php if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly
+}
+?>
 <?php get_template_part( 'components/newsletter', 'page' ); ?>
 <?php get_template_part( 'components/payment-methods', 'page' ); ?>
 

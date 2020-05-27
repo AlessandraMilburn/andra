@@ -7,6 +7,14 @@
 */
 
 get_header(); ?>
+
+
+<?php if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly
+}
+?>
+
+
 <div class="container my-5">
   <!--<div class=" ml-3 mr-0 text-center">
      get_template_part( 'user-page/authentication', 'page' ); ?>        

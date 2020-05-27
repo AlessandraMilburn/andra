@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php get_header(); 
+
+if ( ! defined( 'ABSPATH' ) ) {
+  exit; // Exit if accessed directly
+}
+
+?>
+
+
 
 <div class="container my-5">
   <section class="row my-5">

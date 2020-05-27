@@ -6,7 +6,15 @@
 
 */
 
-get_header(); ?>
+get_header();
+
+
+if ( ! defined( 'ABSPATH' ) ) {
+  exit; // Exit if accessed directly
+}
+
+
+?>
 
 <div class="container">
 

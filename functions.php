@@ -6,6 +6,11 @@
  *
  * Added functions to add the integrity and crossorigin attributes to the style and script tags.
  */
+
+if ( ! defined( 'ABSPATH' ) ) {
+  exit; // Exit if accessed directly
+}
+
 function enqueue_load_bootstrap() {
   // Add bootstrap CSS
   wp_register_style( 'bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', false, NULL, 'all' );

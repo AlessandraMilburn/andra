@@ -1,15 +1,10 @@
 <?php
-  get_header(); 
-  get_template_part( 'template-parts/sub-header', 'page' );
+  get_header(); ?>
 
-// pages 
-  if (is_page('products')) {
-    get_template_part( 'template-parts/pages/products', 'page' );
-  } else if (is_page('training')) {
-    get_template_part( 'template-parts/pages/training', 'page' );
-  } else {
-    get_template_part( 'template-parts/pages/stories', 'page' );
-  }
+  <?php if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly
+}
 ?>
-<?php get_footer(); ?>
+
+ <?php get_footer(); ?>
 

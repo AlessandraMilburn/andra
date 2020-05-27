@@ -1,3 +1,8 @@
+<?php if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly
+}
+?>
+
 
 <?php while(have_posts()) {
   the_post(); ?>
@@ -7,6 +12,9 @@
 <?php 
     }
 ?>
+
+
+
 
 
 <div id="carouselExampleControls" class="carousel slide w-100" >

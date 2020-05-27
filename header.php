@@ -39,7 +39,7 @@
                 <div class="col-1 p-0">
                   <img src="/wp-content/uploads/2020/05/icon-cart.svg"/>
                 </div>
-                <div class="col-3 py-1 px-0">($123.00)</div>
+                <div class="col-4 py-1 px-0"><span class="bold-text">(1)</span> ($123.00)</div>
               </div>
             </div>
           </div>
