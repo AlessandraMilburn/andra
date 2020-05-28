@@ -7,7 +7,6 @@
   </h5>
   <div class="row">
   <?php
-  //assigns variable to display 5 product post types in a page
   $params = array(
     'post_type' => 'product',
     'orderby' => 'post_date',
