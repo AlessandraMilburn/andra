@@ -157,10 +157,23 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
  */
 function andra_features() {
 
-  //header
+  //homepage
   // =============================================================================
+  
+  //website title
   add_theme_support('title-tag');
+
+  //logo 
   add_theme_support( 'custom-logo');
+
+  //header
+  $args = array(
+    'flex-width'    => true,
+    'width'         => 1280,
+    'flex-height'   => true,
+    'height'        => 116,
+  );
+  add_theme_support( 'custom-header', $args );
 
   //nav menu
   // =============================================================================
@@ -176,16 +189,6 @@ function andra_features() {
    }
    add_action( 'init', 'register_my_menus' );
 
-  //homepage
-  // =============================================================================
-
-    $args = array(
-      'flex-width'    => true,
-      'width'         => 980,
-      'flex-height'   => true,
-      'height'        => 567,
-    );
-  add_theme_support( 'custom-header', $args );
 
   //page
   // =============================================================================
