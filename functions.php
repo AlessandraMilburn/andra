@@ -194,7 +194,7 @@ function andra_features() {
 
   // Displaying custom menu icons
   // =============================================================================
-  function add_custom_menu_icons(){ ?>
+  /*function add_custom_menu_icons(){ ?>
     
     <div class="custom-menu">
       <a href="#user" title="User"><img src="/wp-content/uploads/2020/05/icon-user.svg" alt="User"></a>
@@ -205,9 +205,10 @@ function andra_features() {
 
   <?php }
   add_action('x_after_view_global__brand', 'add_custom_menu_icons');
+  */
 }
 
- add_action('after_setup_theme', 'andra_features');
+ add_action('after_setup_theme', 'andra_features'); 
 
 
 

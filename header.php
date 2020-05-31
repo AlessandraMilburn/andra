@@ -45,21 +45,13 @@
           </div>
         </div>
         <div class="row mb-0 py-1">
-          <!-- wp_nav_menu( array( 'theme_location' => 'header-menu' ) );?-->
           <div class="col-2"></div>
           <div class="col-8">
             <div class="container">
-              <ul class="row text-center space-between mb-0 hover nav-button">
-                <li><a href="/all-products">NEW IN</a></li>  
-                <li><a href="/all-products">DRESSES</a></li>  
-                <li><a href="/all-products">JUMPSUITS</a></li>  
-                <li><a href="/all-products">TOPS</a></li>  
-                <li><a href="/all-products">BOTTOMS</a></li>  
-                <li><a href="/all-products">JEWELRY</a></li>  
-                <li><a href="/all-products">SWIM</a></li>  
-                <li class="reg-text red"><a href="/all-products">SALE</a></li>  
-                <li>SEARCH BAR</a></li>  
-              </ul>     
+              <div class="row mb-0 hover nav-button">
+                <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) );?>
+                <div class="col-2"><a>SEARCH BAR</a></div>  
+              </div>     
             </div>  
           <div>
           <div class="col-2"><div>

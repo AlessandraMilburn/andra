@@ -113,7 +113,7 @@ ul {
 }
 
 .pink-hl {
-  background: linear-gradient(to top, #F9D8D1 30%, transparent 50%);
+  background: linear-gradient(to bottom, transparent 60%, #F9D8D1 40%);
 }
 
 
@@ -182,7 +182,7 @@ ul {
 
 .hover li:hover,
 .hover span:hover {
-  background: linear-gradient(to top, #F9D8D1 30%, transparent 50%);
+  background: linear-gradient(to bottom, transparent 60%, #F9D8D1 40%);
 }
 
 .nav-button a:hover {
@@ -295,7 +295,26 @@ header {
   background-size: 100% 100%;
 }
 
+.menu-header-menu-container {
+  width: 80%;
+}
+#menu-header-menu {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  width: 100%;
 
+  justify-content: center;
+  margin-bottom: 0;
+  min-width: max-content;
+}
+
+#menu-header-menu li {
+  margin: 0% 2.5%;
+  width: fit-content;
+  text-transform: uppercase;
+}
 .custom-logo {
   width: 179px;
   height: 84px;
