@@ -1,18 +1,21 @@
 <h5 class="my-4"><span class="pink-hl">&nbsp;Frequently Asked Questions&nbsp;</span></h5>
 
 <div class="p-5">
-<p class="bold-text">I am a question about the order?</p>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+<p class="bold-text"><?php the_field('faq_question_1') ?></p>
+<p><?php the_field('faq_answer_1') ?></p>
 <br>
-<p class="bold-text">I am a question about the order?</p>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+<p class="bold-text"><?php the_field('faq_question_2') ?></p>
+<p><?php the_field('faq_answer_2') ?></p>
 <br>
-<p class="bold-text">I am a question about the order?</p>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+<p class="bold-text"><?php the_field('faq_question_3') ?></p>
+<p><?php the_field('faq_answer_3') ?></p>
 <br>
-<p class="bold-text">I am a question about the order?</p>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+<p class="bold-text"><?php the_field('faq_question_4') ?></p>
+<p><?php the_field('faq_answer_4') ?></p>
 <br>
-<p class="bold-text">I am a question about the order?</p>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+<p class="bold-text"><?php the_field('faq_question_5') ?></p>
+<p><?php the_field('faq_answer_5') ?></p>
+<br>
+<p class="bold-text"><?php the_field('faq_question_6') ?></p>
+<p><?php the_field('faq_answer_6') ?></p>
 </div>

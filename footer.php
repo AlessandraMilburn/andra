@@ -13,18 +13,18 @@
         <div class="col-1"></div>
         <ul class="col-3 p-3">
           <b>CUSTOMER SERVICE</b>
-            <li><a href="/customer-service/">Contact Us</a></li>  
-            <li><a>Orders & Shipping</a></li>  
-            <li><a>Terms & Conditions</a></li>  
-            <li><a>FAQs</a></li>  
-            <li><a>Privacy Policy</a></li>  
+            <li class="hover"><a href="/customer-service/contact-us/">Contact Us</a></li>  
+            <li class="hover"><a href="/customer-service/orders-and-shipping">Orders & Shipping</a></li>  
+            <li class="hover"><a href="/customer-service/terms-and-conditions">Terms & Conditions</a></li>  
+            <li class="hover"><a href="/customer-service/faqs">FAQs</a></li>  
+            <li class="hover"><a href="/customer-service/privacy-policy">Privacy Policy</a></li>  
           </ul>
         <ul class="col-3 p-3">
           <b>ABOUT</b>
-            <li><a href="/about-us/">About Us</a></li>  
-            <li><a>Careers</a></li>  
-            <li><a>Sitemap</a></li>  
-            <li><a>Affiliate Program</a></li>  
+            <li class="hover"><a href="/about-us/">About Us</a></li>  
+            <li class="hover"><a>Careers</a></li>  
+            <li class="hover"><a>Sitemap</a></li>  
+            <li class="hover"><a>Affiliate Program</a></li>  
           </ul>        
         <div class="col-5 p-3 text-center">
           <b>FOLLOW US</b>
@@ -39,7 +39,7 @@
             <br>
           Copyright 2020 Andra Fashion UAE.
           <br>
-          For <a><u>Alessandra Milburn's Porfolio</u></a> purposes only.
+          For <a target="_blank" href="https://www.alessandramilburn.com" class="pink-hl-s">Alessandra Milburn's Porfolio</a> purposes only.
         </div>
       </div>
     </footer>  

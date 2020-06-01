@@ -24,20 +24,19 @@ get_header(); ?>
     <!--CONTENT start-->    
     <section class="col-9">
       <div>
-        <?php get_template_part( 'customer-service/parts/contact-us', 'page' ); ?>
-      </div>      
-      <div>
-        <?php get_template_part( 'customer-service/parts/faqs', 'page' ); ?>
-      </div>
-      <div>
-        <?php get_template_part( 'customer-service/parts/orders-and-shipping', 'page' ); ?>
-      </div>
-      <div>
-        <?php get_template_part( 'customer-service/parts/terms-and-conditions', 'page' ); ?>
-      </div>
-      <div>
-        <?php get_template_part( 'customer-service/parts/privacy-policy', 'page' ); ?>
-      </div>      
+        <?php 
+        if (is_page('contact-us')) {
+          get_template_part( 'customer-service/parts/contact-us', 'page' );
+        } else if (is_page('orders-and-shipping')) {
+          get_template_part( 'customer-service/parts/orders-and-shipping', 'page' );
+        } else if (is_page('terms-and-conditions')) {
+          get_template_part( 'customer-service/parts/terms-and-conditions', 'page' );
+        } else if (is_page('faqs')) {
+          get_template_part( 'customer-service/parts/faqs', 'page' );
+        } else {
+          get_template_part( 'customer-service/parts/privacy-policy', 'page' );
+        } ?>
+      </div>        
     </section>
   </div>
   <!--CONTENT end-->
