@@ -22,7 +22,7 @@ get_header(); ?>
     </section>
     <!--CONTENT start-->    
     <section class="col-10">
-      <div>
+      <div class="container">
         <?php 
         if (is_page('about-us')) {
           get_template_part( 'about-us/parts/about-us', 'page' ); 

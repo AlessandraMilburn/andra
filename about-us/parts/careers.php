@@ -1,18 +1,18 @@
-<h5 class=" my-4"><span class="pink-hl">&nbsp;Careers&nbsp;</span></h5>
+<h5 class=" my-4 text-center"><span class="pink-hl">&nbsp;Careers&nbsp;</span></h5>
 
-<div class="p-5">
-<p class="bold-text">I am a question about the order?</p>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-<br>
-<p class="bold-text">I am a question about the order?</p>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-<br>
-<p class="bold-text">I am a question about the order?</p>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-<br>
-<p class="bold-text">I am a question about the order?</p>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-<br>
-<p class="bold-text">I am a question about the order?</p>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+<div class="py-5">
+  <?php get_template_part( '/about-us/parts/careers-carousel', 'page' ); ?>
+  <br>
+  <h5 class="bold-text text-center">JOB OPENINGS</h5>
+  <?php get_template_part( 'blog/jobposts-preview', 'page' ); ?>
+  <br>
+  <h5 class="bold-text text-center">THE TEAM</h5>
+  <div class="row">
+    <?php get_template_part( 'blog/teams-preview', 'page' ); ?>
+  </div>
+  <h5 class="bold-text text-center">LIFE AT ANDRA</h5>
+  <div>
+    <?php get_template_part( 'blog/social-preview', 'page' ); ?>
+
+  </div>
 </div>
