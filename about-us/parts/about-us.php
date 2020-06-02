@@ -13,9 +13,17 @@
 <p><?php the_field('vision_statement'); ?></p>
 <br>
 <p class="bold-text text-center text-uppercase">PRESS RELEASES</p>
-  <?php get_template_part( 'blog/pr-preview', 'page' ); ?>
+<div class="container my-5">
+  <div class="row">
+    <?php get_template_part( 'blog/pr-preview', 'page' ); ?>
+  </div>
+</div>
 <br>
 <p class="bold-text text-center text-uppercase">PARTNERSHIPS</p>
-  <?php get_template_part( 'blog/partnerships-preview', 'page' ); ?>
+<div class="container my-5">
+  <div class="row">
+    <?php get_template_part( 'blog/partnerships-preview', 'page' ); ?>
+  </div>
+</div>
 <br>
 </div>
