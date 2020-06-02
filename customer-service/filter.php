@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container sticky">
   <ul class="py-5">
     <li class="py-1 hover"><a class="<?php if (is_page('contact-us')) { echo "pink-hl-s"; } ?>" href="/customer-service/contact-us/">&nbsp;Contact Us&nbsp;</a></li>
     <li class="py-1 hover"><a class="<?php if (is_page('orders-and-shipping')) { echo "pink-hl-s"; } ?>" href="/customer-service/orders-and-shipping">&nbsp;Orders and Shipping&nbsp;</a></li>
