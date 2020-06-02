@@ -18,6 +18,4 @@
 <p class="bold-text text-center text-uppercase">PARTNERSHIPS</p>
   <?php get_template_part( 'blog/partnerships-preview', 'page' ); ?>
 <br>
-<p class="bold-text text-center text-uppercase">SOCIAL</p>
-  <?php get_template_part( 'blog/social-preview', 'page' ); ?>
 </div>
