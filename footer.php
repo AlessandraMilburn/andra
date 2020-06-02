@@ -22,9 +22,9 @@
         <ul class="col-3 p-3">
           <b>ABOUT</b>
             <li class="hover"><a href="/about-us/">About Us</a></li>  
-            <li class="hover"><a>Careers</a></li>  
-            <li class="hover"><a>Sitemap</a></li>  
-            <li class="hover"><a>Affiliate Program</a></li>  
+            <li class="hover"><a href="/about-us/careers">Careers</a></li>  
+            <li class="hover"><a href="/about-us/sitemap">Sitemap</a></li>  
+            <li class="hover"><a href="/about-us/affiliate-program">Affiliate Program</a></li>  
           </ul>        
         <div class="col-5 p-3 text-center">
           <b>FOLLOW US</b>
