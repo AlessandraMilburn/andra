@@ -183,8 +183,9 @@ function andra_features() {
     register_nav_menus(
       array(
         'header-menu' => __( 'Header Menu' ),
-        'extra-menu' => __( 'Extra Menu' )
-       )
+        'customer-service-menu' => __( 'Customer Service Menu' ),
+        'about-us-menu' => __( 'About Us Menu' )
+        )
      );
    }
    add_action( 'init', 'register_my_menus' );
