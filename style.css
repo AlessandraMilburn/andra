@@ -11,7 +11,6 @@
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-
 }
 
 html,
@@ -41,12 +40,12 @@ footer {
   flex-shrink: 0;
 }
 
-/*********************** STYLE BY ELEMENT 
+/********************************************** STYLE BY ELEMENT 
 *
 * 
 */
 
-/* FONTS
+/********************************************** FONTS
 * font-family: 'Cabin', sans-serif;
 * font-family: 'Source Sans Pro', sans-serif;
 */
@@ -125,7 +124,7 @@ ul {
   background: linear-gradient(to bottom, transparent 80%, #F9D8D1 20%);
 }
 
-/* COLORS
+/********************************************** COLORS
 *
 * 
 */
@@ -183,7 +182,8 @@ ul {
 .border-pink {
   border-color: #F9D8D1;
 }
-/* STATES
+
+/********************************************** STATES
 *
 * 
 */
@@ -197,9 +197,6 @@ ul {
   background: linear-gradient(to bottom, transparent 75%, #F9D8D1 25%);
 }
 
-
-
-
 .hide {
   display: none;
 }
@@ -208,7 +205,7 @@ ul {
  fill: #F9D8D1;
 }
 
-/* SPACING
+/********************************************** SPACING
 *
 * 
 */
@@ -218,7 +215,7 @@ ul {
   justify-content: space-between;
 }
 
-/* SIZING
+/********************************************** SIZING
 *
 * 
 */
@@ -228,14 +225,14 @@ ul {
 }
 
 
-/* CONTAINERS
+/********************************************** CONTAINERS
 *
 * 
 */
 
 
 
-/* SEPARATORS
+/********************************************** SEPARATORS
 *
 * 
 */
@@ -245,7 +242,7 @@ ul {
   width: 100%;
 }
 
-/* POSITION / ALIGNMENT
+/********************************************** POSITION / ALIGNMENT
 *
 * 
 */
@@ -271,7 +268,7 @@ ul {
   position: sticky;
   top: 0;
 }
-/* IMAGES
+/********************************************** IMAGES
 *
 * 
 */
@@ -290,12 +287,12 @@ img{
   width: 20px;
 }
 
-/*********************** STYLE BY SECTION
+/********************************************** STYLE BY SECTION
 *
 * 
 */
 
-/* HEADER & NAV
+/********************************************** HEADER & NAV
 *
 * 
 */
@@ -305,7 +302,6 @@ header {
 }
 
 #nav {
-  /**/
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -344,7 +340,7 @@ header {
 }
 
 
-/* COMPONENTS
+/********************************************** COMPONENTS
 *
 * 
 */
@@ -355,7 +351,7 @@ header {
 }
 
 
-/* SINGLE PRODUCT
+/********************************************** SINGLE PRODUCT
 *
 * 
 */
@@ -376,7 +372,7 @@ header {
 	color:red;
 }
 
-/* Filter
+/********************************************** Filter
 *
 * 
 */
@@ -389,7 +385,7 @@ header {
 
 }
 
-/* Select Form
+/********************************************** Select Form
 *
 * 
 */
@@ -399,13 +395,13 @@ select {
   color: black;
 }
 
-/* USER PAGE
+/********************************************** USER PAGE
 *
 * 
 */
 
 
-/* CART
+/********************************************** CART
 *
 * 
 */
