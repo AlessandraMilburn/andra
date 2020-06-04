@@ -22,7 +22,7 @@
       <nav class="container-fluid" id="nav" style="background-image: url('<?php header_image(); ?>');" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>">
         <div class="row">
           <div class="col-5"></div>
-          <div class="col-2 my-0" id="logo">
+          <div class="col-2 mt-2 mb-1" id="logo">
           <?php the_custom_logo(); ?>  
           </div>
           <div class="col-2 p-0"></div>
