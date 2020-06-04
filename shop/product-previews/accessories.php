@@ -1,47 +1,25 @@
-<!--INSERT CODE-->
-<section class="container text-center ">
+<section class="container text-center my-5 ">
   <h5 class="text-uppercase bold-text my-4">
-    <span class="pink-hl">&nbsp;
-      Accessories 
-    &nbsp;</span>
+    <span class="pink-hl">&nbsp;Accessories&nbsp;</span>
   </h5>
   <div class="row">
-  <?php
-  //assigns variable to display 5 product post types in a page
-  $params = array(
-    'post_type' => 'product',
-    'orderby' => 'post_date',
-    'category_name' => 'accessories'
-);
-    
-  $wc_query = new WP_Query($params);
-
-  //checks if there are products and will display the post if available
-  if ($wc_query->have_posts()) : 
-    while ($wc_query->have_posts()) : 
-  $wc_query->the_post();
-
-  //Product Variable
-  $product = get_product(get_the_ID()); ?>
-
-  <!--SINGLE PRODUCT start-->
-    <div class="col-3">
-      <?php get_template_part( 'components/single-product', 'page' ); ?>
-    </div><!--Item column-->
-  <!--SINGLE PRODUCT end-->
-
+      <?php
+        $args = array( 
+        'post_type' => 'product', 
+        'product_cat' => 'accessories', 
+        'posts_per_page' => 4, 
+        'orderby' => 'rand' 
+      );
+        $loop = new WP_Query( $args );
+        while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+        <div class="col-3">
+        <?php get_template_part( 'components/single-product', 'page' ); ?>
+        </div>
+        </a>
     <?php endwhile; ?>
-    <?php wp_reset_postdata(); ?>
-    <?php else:  ?>
-    <p>
-        <?php _e( 'No Products'); ?>
-    </p>
-    <?php endif; ?>
+    <?php wp_reset_query(); ?>
   </div> <!--Item row-->
   <button class="white bg-black px-5 py-2">
-    SHOP NOW
-  </button
-
-</section> <!--section-->
-
-
+    <a href="">SHOP NOW</a>
+  </button>
+</section> 

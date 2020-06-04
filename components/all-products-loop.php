@@ -23,7 +23,7 @@
       </div>
       <form class="cart " method="post" enctype="multipart/form-data">
         <input type="hidden" name="add-to-cart" value="<?php echo esc_attr($product->id); ?>">
-        <button class="bg-black white py-2 px-4 light-text" type="submit"> <?php echo $product->single_add_to_cart_text(); ?> </button>
+        <button class="bg-black white py-2 px-4 light-text" type="submit"> <?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?></button>
       </form>
     </div><!--Item column-->
   <!--SINGLE PRODUCT end-->

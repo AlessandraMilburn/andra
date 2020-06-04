@@ -16,17 +16,12 @@ if ( ! defined( 'ABSPATH' ) ) {
     <?php get_template_part( 'blog/shop/blog-new-dresses', 'page' ); ?>
   </div>
 </div>
-<?php get_template_part( 'shop/product-previews/test-dresses', 'page' ); ?>
+<?php get_template_part( 'shop/product-previews/dresses', 'page' ); ?>
 <div class="container my-5">
   <div class="row">
     <?php get_template_part( 'blog/shop/blog-new-accessories', 'page' ); ?>
   </div>
 </div>
 <?php get_template_part( 'shop/product-previews/accessories', 'page' ); ?>
-<div class="container my-5">
-  <div class="row">
-    <?php get_template_part( 'blog/marketing/pr-preview', 'page' ); ?>
-  </div>
-</div>
 <?php get_footer(); ?>
 

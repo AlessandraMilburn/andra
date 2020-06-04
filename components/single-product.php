@@ -5,7 +5,7 @@
             <i class="heart fa fa-heart-o"></i>
           </div>
           <!--PRODUCT IMAGE-->
-          <div class="my-2">
+          <div id="product-image-preview" class="my-2">
             <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="300px" height="300px" />'; ?>
           </div>
           
