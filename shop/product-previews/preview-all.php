@@ -1,3 +1,9 @@
+<?php
+  $args = array( 'post_type' => 'product', 'posts_per_page' => 1, 'product_cat' => 'shoes', 'orderby' => 'rand' );
+  $loop = new WP_Query( $args );
+  while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+
+
 <!--INSERT CODE-->
 <section class="container text-center ">
   <h5 class="text-uppercase bold-text my-4">
@@ -6,7 +12,7 @@
     &nbsp;</span>
   </h5>
   <div class="row">
-  <?php
+  <?php /*
   //assigns variable to display 5 product post types in a page
   $params = array(
     'posts_per_page' => 4,
@@ -19,7 +25,7 @@
   $wc_query->the_post();
 
   //Product Variable
-  $product = get_product(get_the_ID()); ?>
+  $product = get_product(get_the_ID()); */?>
 
   <!--SINGLE PRODUCT start-->
     <div class="col-3">
@@ -27,13 +33,14 @@
     </div><!--Item column-->
   <!--SINGLE PRODUCT end-->
 
-    <?php endwhile; ?>
-    <?php wp_reset_postdata(); ?>
-    <?php else:  ?>
+   <?php// endwhile; ?>
+    <?php// wp_reset_postdata(); ?>
+    <?php //else:  ?>
     <p>
-        <?php _e( 'No Products'); ?>
+        <?php// _e( 'No Products'); ?>
     </p>
-    <?php endif; ?>
+    <?php// endif; ?>
+
   </div> <!--Item row-->
   <button class="white bg-black px-5 py-2">
     SHOP NOW
@@ -41,4 +48,5 @@
 
 </section> <!--section-->
 
-
+<?php endwhile; ?>
+    <?php wp_reset_query(); ?>

@@ -339,6 +339,19 @@ header {
   padding: .25% 0%;
 }
 
+/********************************************** BLOG PREVIEWS
+*
+* 
+*/
+
+.featured-img1 {
+  height: 500px;
+}
+
+.featured-img2 {
+  height: 450px;
+  margin-top: 25px;
+}
 
 /********************************************** COMPONENTS
 *
