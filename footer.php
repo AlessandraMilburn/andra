@@ -23,10 +23,10 @@
           <b class="text-uppercase"><?php the_field('social_title', 316); ?></b>
             <div class="row social">
               <div class="col-4"></div>
-              <div class="col-1"><a target="_blank" href="https://<?php the_field('facebook_link',316) ?>"><img src="/wp-content/uploads/2020/05/Facebook.svg"/></a></div>
-              <div class="col-1"><a target="_blank" href="https://<?php the_field('twitter_link',316) ?>"><img src="/wp-content/uploads/2020/05/Twitter.svg"/></a></div>
-              <div class="col-1"><a target="_blank" href="https://<?php the_field('instagram_link',316) ?>"><img src="/wp-content/uploads/2020/05/Instagram-filled.svg"/></a></div>
-              <div class="col-1"><a target="_blank" href="https://<?php the_field('youtube_link',316) ?>"><img src="/wp-content/uploads/2020/05/Youtube.svg"/></a></div>
+              <div class="col-1"><a target="_blank" href="https://<?php the_field('facebook_link',316) ?>"><i class="fab fa-facebook-f"></i></a></div>
+              <div class="col-1"><a target="_blank" href="https://<?php the_field('twitter_link',316) ?>"><i class="fab fa-twitter"></i></a></div>
+              <div class="col-1"><a target="_blank" href="https://<?php the_field('instagram_link',316) ?>"><i class="fab fa-instagram"></i></a></div>
+              <div class="col-1"><a target="_blank" href="https://<?php the_field('youtube_link',316) ?>"><i class="fab fa-youtube"></i></a></div>
               <div class="col-4"></div>
             </div>
             <br>
