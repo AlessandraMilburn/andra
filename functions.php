@@ -68,6 +68,7 @@ function andra_files() {
 
   //CSS
   wp_enqueue_style('andra_main_styles', get_stylesheet_uri());
+  wp_enqueue_style( 'prefix-font-awesome', 'https://use.fontawesome.com/releases/v5.0.6/css/all.css', array(), '5.0.6' );
 
   //Google Analytics
   wp_enqueue_script('googleanalytics', get_template_directory_uri() . '/assets/js/googleanalytics.js', null, null); 
@@ -183,6 +184,7 @@ function andra_features() {
     register_nav_menus(
       array(
         'header-menu' => __( 'Header Menu' ),
+        'user-menu' => __( 'User Menu' ),
         'customer-service-menu' => __( 'Customer Service Menu' ),
         'about-us-menu' => __( 'About Us Menu' )
         )

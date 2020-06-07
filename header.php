@@ -33,17 +33,10 @@
           <div class="col-3 ">
             <div class="container py-3">
               <div class="row d-flex justify-content-end">
-                <div class="col-3"></div>
-                <div class="col-1 p-1">
-                  <img src="/wp-content/uploads/2020/05/icon-user.svg"/>
+                <div class="col-8 p-1">
+                  <?php wp_nav_menu( array( 'theme_location' => 'user-menu' ) );?>
                 </div>
-                <div class="col-1 p-1">
-                  <img src="/wp-content/uploads/2020/05/icon-heart-1.svg"/>
-                </div>
-                <div class="col-1 p-1">
-                  <img src="/wp-content/uploads/2020/05/icon-cart.svg"/>
-                </div>
-                <div class="col-4 py-3 px-0 xs-text"><span class="bold-text ">(1)</span> ($123.00)</div>
+                <!--div class="col-4 py-3 px-0 xs-text"><span class="bold-text ">(1)</span> ($123.00)</div-->
               </div>
             </div>
           </div>
