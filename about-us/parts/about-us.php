@@ -15,14 +15,14 @@
 <p class="bold-text text-center text-uppercase">PRESS RELEASES</p>
 <div class="container my-5">
   <div class="row">
-    <?php get_template_part( 'blog/pr-preview', 'page' ); ?>
+    <?php get_template_part( 'blog/marketing/pr-preview', 'page' ); ?>
   </div>
 </div>
 <br>
 <p class="bold-text text-center text-uppercase">PARTNERSHIPS</p>
 <div class="container my-5">
   <div class="row">
-    <?php get_template_part( 'blog/partnerships-preview', 'page' ); ?>
+    <?php get_template_part( 'blog/operations/partnerships-preview', 'page' ); ?>
   </div>
 </div>
 <br>
