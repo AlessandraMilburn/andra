@@ -20,8 +20,8 @@
 -->
     <header>
       <!--ANNOUNCEMENT SECTION-->
-      <div class="announcement bg-black">
-        <p class="mb-0 white">Check out our new collection - just in! <a><u>Click here</u></a></p>
+      <div class="announcement bg-black white">
+       This is a Demo website. For <a target="_blank" href="https://www.alessandramilburn.com" class="pink-hl-s">Alessandra Milburn's Porfolio</a> purposes only.
       </div>
       <nav class="container-fluid" id="nav" style="background-image: url('<?php header_image(); ?>');" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>">
         <div class="row">
