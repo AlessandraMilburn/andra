@@ -105,8 +105,8 @@ function andra_wrapper_end() {
 function mytheme_add_woocommerce_support() {
   add_theme_support( 'woocommerce' );
 
-    //Adding display
-  add_theme_support( 'woocommerce', array(
+    //Adding display (removed due to low image quality)
+  /* add_theme_support( 'woocommerce', array(
     'thumbnail_image_width' => 150,
     'single_image_width'    => 300,
 
@@ -118,7 +118,7 @@ function mytheme_add_woocommerce_support() {
         'min_columns'     => 2,
         'max_columns'     => 5,
     ),
-  ) );
+  ) ); */
 
   add_theme_support( 'wc-product-gallery-zoom' );
   add_theme_support( 'wc-product-gallery-lightbox' );
@@ -126,26 +126,34 @@ function mytheme_add_woocommerce_support() {
   add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
 
-  /**
- * Ensure cart contents update when products are added to the cart via AJAX
- */
-function my_header_add_to_cart_fragment( $fragments ) {
- 
-  ob_start();
-  $count = WC()->cart->cart_contents_count;
-  ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php
-  if ( $count > 0 ) {
-      ?>
-      <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
-      <?php            
-  }
-      ?></a><?php
+    /**
+   * Ensure cart contents update when products are added to the cart via AJAX
+   */
+  function my_header_add_to_cart_fragment( $fragments ) {
+  
+    ob_start();
+    $count = WC()->cart->cart_contents_count;
+    ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php
+    if ( $count > 0 ) {
+        ?>
+        <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+        <?php            
+    }
+        ?></a><?php
 
-  $fragments['a.cart-contents'] = ob_get_clean();
-   
-  return $fragments;
-}
-add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment' );
+    $fragments['a.cart-contents'] = ob_get_clean();
+    
+    return $fragments;
+  }
+  add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment' );
+  
+  add_filter('woocommerce_attribute_show_in_nav_menus', 'wc_reg_for_menus', 1, 2);
+
+  function wc_reg_for_menus( $register, $name = '' ) {
+      if ( $name == 'pa_size' ) $register = true;
+      return $register;
+  }
+
 }
 
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
@@ -197,21 +205,6 @@ function andra_features() {
   // =============================================================================
   add_theme_support( 'post-thumbnails' );  
 
-
-  // Displaying custom menu icons
-  // =============================================================================
-  /*function add_custom_menu_icons(){ ?>
-    
-    <div class="custom-menu">
-      <a href="#user" title="User"><img src="/wp-content/uploads/2020/05/icon-user.svg" alt="User"></a>
-      <a href="#wishlist" title="Wishlist"><img src="/wp-content/uploads/2020/05/icon-heart-1.svg" alt="Wishlist"></a>
-      <a href="#cart" title="Cart"><img src="/wp-content/uploads/2020/05/icon-cart.svg" alt="Cart"></a>
-      <a href="#search" title="Search"><img src="http://www.leemerritt.com/wp-content/uploads/2016/12/search.png" alt="Search"></a>
-    </div>
-
-  <?php }
-  add_action('x_after_view_global__brand', 'add_custom_menu_icons');
-  */
 }
 
  add_action('after_setup_theme', 'andra_features'); 

@@ -15,7 +15,17 @@ if ( ! defined( 'ABSPATH' ) ) {
       <div class="row">
         <!--thumbnails-->
         <div class="col-2">
-          Test
+          <div class="row">
+          <?php
+            $product = get_product(get_the_ID());
+            $attachment_ids = $product->get_gallery_image_ids();
+            foreach( $attachment_ids as $attachment_id ) 
+            // Display Image instead of URL
+            //  echo wp_get_attachment_image($attachment_id, 'full');
+            { ?> 
+              <img class="mb-2 " src="<?php /* image URL */ echo $Original_image_url = wp_get_attachment_url( $attachment_id );?>" />
+          <?php }?>
+          </div>
         </div>
 
         <!--main image-->
@@ -49,11 +59,14 @@ if ( ! defined( 'ABSPATH' ) ) {
           <label class="bold-text" for="size">Select your size</label>
           <select class="bg-transparent w-50 light-text"id="size" form="cart ">
             <option class="bg-transparent" value="default">Select</option>
-            <option value="extra small">Extra Small</option>
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="Large">Large</option>
-            <option value="Extra Large">Extra Large</option>
+            <option value="extra small">
+
+            
+              <?php 
+              //displaying product attribute - size
+              $product = get_product(get_the_ID());
+              echo $product->get_attribute( 'size' );?>
+            </option>
           </select>
         </span>
       </div>

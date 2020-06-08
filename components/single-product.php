@@ -27,6 +27,7 @@
           $product = get_product(get_the_ID());
             echo $product->get_price();?>
           </p>
+
         </a>
       </div>
         
