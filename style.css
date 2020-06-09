@@ -287,6 +287,20 @@ img{
   width: 20px;
 }
 
+
+/* GALLERY */
+
+.product-gallery img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.product-gallery img:hover {
+  opacity: 1;
+}
+
+
+
 /********************************************** STYLE BY SECTION
 *
 * 

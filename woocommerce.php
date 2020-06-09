@@ -13,27 +13,25 @@ if ( ! defined( 'ABSPATH' ) ) {
     <!--image gallery section-->
     <div class="col-8">
       <div class="row">
-        <!--thumbnails-->
-        <div class="col-2">
+        <!--thumbnails display-->
+        <div class="col-2 product-">
           <div class="row">
+          <img class="mb-2 " onclick="imageSwitch(this);" src="<?php /* main image */ the_post_thumbnail_url();?>">
           <?php
+          //image gallery loop
             $product = get_product(get_the_ID());
             $attachment_ids = $product->get_gallery_image_ids();
             foreach( $attachment_ids as $attachment_id ) 
-            // Display Image instead of URL
-            //  echo wp_get_attachment_image($attachment_id, 'full');
             { ?> 
-              <img class="mb-2 " src="<?php /* image URL */ echo $Original_image_url = wp_get_attachment_url( $attachment_id );?>" />
-          <?php }?>
+              <img class="mb-2 " onclick="imageSwitch(this);" src="<?php /* image URL */ echo $Original_image_url = wp_get_attachment_url( $attachment_id );?>" />
+              <?php }?>
           </div>
         </div>
-
-        <!--main image-->
+        <!--main display-->
         <div class="col-10">
-
-          <div><?php 
-         
-          the_post_thumbnail(); ?></div>
+          <div>
+          <img id="expandedImg" src="<?php the_post_thumbnail_url();?>">
+          </div>
         </div>        
       </div>
     </div>

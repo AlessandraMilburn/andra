@@ -1,6 +1,6 @@
 <?php
 
-/**
+/***************************************** BOOTSTRAP
  * Load bootstrap from CDN
  * https://getbootstrap.com/
  *
@@ -55,7 +55,7 @@ add_filter('script_loader_tag', 'add_popper_script_attributes', 10, 2);
 add_action( 'wp_enqueue_scripts', 'enqueue_load_bootstrap' );
 
 
-/**
+/***************************************** MY FILES
  * CSS and Javascript files
  * 
  */
@@ -76,12 +76,13 @@ function andra_files() {
   //Javascript
   wp_enqueue_script('favorites', get_template_directory_uri() . '/assets/js/favorites.js', null, null, true);
   wp_enqueue_script('switch-visible', get_template_directory_uri() . '/assets/js/switch-visible.js', null, null, true);
+  wp_enqueue_script('image-switch', get_template_directory_uri() . '/assets/js/image-switch.js', null, null, true);
 
 }
 add_action('wp_enqueue_scripts', 'andra_files');
 
 
-/**
+/***************************************** WOOCOMMERCE
  * WooCommerce 
  * 
  */
@@ -160,7 +161,7 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
 
 
-/**
+/***************************************** ADMIN PANEL FEATURES
  * Admin Panel features
  * 
  */
