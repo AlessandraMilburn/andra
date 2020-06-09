@@ -118,13 +118,13 @@ function mytheme_add_woocommerce_support() {
         'min_columns'     => 2,
         'max_columns'     => 5,
     ),
-  ) ); */
-
+  ) ); 
+  //retired from plug-in
   add_theme_support( 'wc-product-gallery-zoom' );
   add_theme_support( 'wc-product-gallery-lightbox' );
   add_theme_support( 'wc-product-gallery-slider' );
   add_filter( 'woocommerce_enqueue_styles', '__return_false' );
-
+  */
 
     /**
    * Ensure cart contents update when products are added to the cart via AJAX
