@@ -42,12 +42,17 @@ if ( ! defined( 'ABSPATH' ) ) {
       <span class="m-0"><?php the_excerpt(); ?></span>
 
       <!--Price--> 
-      <p class="my-2"><span class="price bold-text" >        
-      <?php 
-      $product = get_product(get_the_ID());
-      $product_price = $product->get_price();
-      echo wc_price($product_price);?></span>
-      <span class="xs-text">(shipping fee included)</span></p>
+      <p class="my-2">
+        <span class="price bold-text" >        
+          <?php 
+          $product = get_product(get_the_ID());
+          $product_price = $product->get_price();
+          echo wc_price($product_price);?>
+        </span>
+        <span class="xs-text">
+          (shipping fee included)
+        </span>
+      </p>
 
       <!--Info--> 
       <p class=""><a><u>Delivery returns info</u></a> <a><u>Size Guide</u></a></p>

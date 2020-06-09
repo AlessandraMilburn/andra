@@ -20,12 +20,13 @@
           </div>
 
           <!--Price--> 
-          <p class="price">$
+          <p class="price">
           
           <?php 
           //Product Variable
           $product = get_product(get_the_ID());
-            echo $product->get_price();?>
+          $product_price = $product->get_price();
+          echo wc_price($product_price);?>
           </p>
 
         </a>
