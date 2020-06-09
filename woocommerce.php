@@ -63,14 +63,14 @@ if ( ! defined( 'ABSPATH' ) ) {
           <label class="bold-text" for="size">Select your size</label>
           <select class="bg-transparent w-50 light-text"id="size" form="cart ">
             <option class="bg-transparent" value="default">Select</option>
-            <option value="extra small">
-
             
               <?php 
               //displaying product attribute - size
-              $product = get_product(get_the_ID());
-              echo $product->get_attribute( 'size' );?>
-            </option>
+              global $product;
+              $size = array_values( wc_get_product_terms( $product->id, 'pa_size', array( 'fields' => 'names' ) ) ); 
+              $prodsizes =  "<option>"  . implode('</option>, <option>',$size) . "</option>" ;
+              echo $prodsizes;
+              ?>
           </select>
         </span>
       </div>
