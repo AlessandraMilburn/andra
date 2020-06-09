@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div class="col-8">
       <div class="row">
         <!--thumbnails display-->
-        <div class="col-2 product-">
+        <div class="col-2 product-gallery">
           <div class="row">
           <img class="mb-2 " onclick="imageSwitch(this);" src="<?php /* main image */ the_post_thumbnail_url();?>">
           <?php
@@ -42,10 +42,11 @@ if ( ! defined( 'ABSPATH' ) ) {
       <span class="m-0"><?php the_excerpt(); ?></span>
 
       <!--Price--> 
-      <p class="my-2"><span class="price bold-text" >$          
+      <p class="my-2"><span class="price bold-text" >        
       <?php 
       $product = get_product(get_the_ID());
-      echo $product->get_price();?></span>
+      $product_price = $product->get_price();
+      echo wc_price($product_price);?></span>
       <span class="xs-text">(shipping fee included)</span></p>
 
       <!--Info--> 
