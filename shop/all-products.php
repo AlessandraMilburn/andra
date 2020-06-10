@@ -17,17 +17,7 @@ get_header(); ?>
 
   <!--PAGE NAV-->
   <div class="text-center my-3">
-    <div class="grey">
-      <a>Home >&nbsp;</a>
-      <a>Category >&nbsp;</a>
-      <a>Sub Category&nbsp;</a>
-    </div>  
-    <h5 class="text-uppercase bold-text">
-      <span class="pink-hl">&nbsp;CLOTHING AND ACCESSORIES&nbsp;</span>
-    </h5>
-    <p>
-      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-    </p>
+    <?php get_template_part( 'shop/shop-header', 'page' ); ?>
   </div>
   <!--PRODUCTS SECTION start-->
   <div class="row">
