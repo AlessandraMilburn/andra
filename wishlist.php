@@ -35,7 +35,6 @@ if ( ! defined( 'ABSPATH' ) ) {
   <!--PRODUCTS SECTION start-->
   <div class="row">
       <?php get_template_part( 'components/all-products-loop', 'page' ); ?>
-    </section>
   </div>
   <!--PRODUCT SECTION end-->
 </div>
