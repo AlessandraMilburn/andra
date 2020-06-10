@@ -7,5 +7,5 @@
       <span class="pink-hl">&nbsp;<?php the_title(); ?>&nbsp;</span>
     </h5>
     <p>
-      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+      <?php the_excerpt(); ?>
     </p>
