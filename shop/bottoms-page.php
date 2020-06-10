@@ -1,7 +1,7 @@
 <?php
 
 /*
-* Template Name: All Products
+* Template Name: Bottoms
 * description: Category Template for Andra Woocommerce by Alessandra Milburn
 
 */
@@ -30,7 +30,7 @@ get_header(); ?>
     </section>
     <!--PRODUCTS-->    
     <section class="col-9">
-      <?php get_template_part( 'components/all-products-loop', 'page' ); ?>
+      <?php get_template_part( 'shop/filtered-pages/bottoms', 'page' ); ?>
     </section>
   </div>
   <!--PRODUCT SECTION end-->

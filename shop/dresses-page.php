@@ -1,7 +1,7 @@
 <?php
 
 /*
-* Template Name: Dress Products
+* Template Name: Dresses
 * description: Category Template for Andra Woocommerce by Alessandra Milburn
 
 */
@@ -17,16 +17,16 @@ get_header(); ?>
 
   <!--PAGE NAV-->
   <div class="text-center my-3">
-    <?php get_template_part( 'shop/shop-header', 'page' ); ?>
+  <?php get_template_part( 'shop/parts/shop-header', 'page' ); ?>
   </div>
 
   <!--PRODUCTS SECTION start-->
   <div class="row">
     <!--SORT & FILTER-->
     <section class="col-3 position-sticky">
-      <?php get_template_part( 'shop/sorter', 'page' ); ?>
+      <?php get_template_part( 'shop/parts/sorter', 'page' ); ?>
       <br>
-      <?php get_template_part( 'shop/filter', 'page' ); ?>
+      <?php get_template_part( 'shop/parts/filter', 'page' ); ?>
     </section>
     <!--PRODUCTS-->    
     <section class="col-9">

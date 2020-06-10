@@ -1,7 +1,7 @@
 <?php
 
 /*
-* Template Name: All Products
+* Template Name: Accessories
 * description: Category Template for Andra Woocommerce by Alessandra Milburn
 
 */
@@ -17,7 +17,7 @@ get_header(); ?>
 
   <!--PAGE NAV-->
   <div class="text-center my-3">
-  <?php get_template_part( 'shop/parts/shop-header', 'page' ); ?>
+    <?php get_template_part( 'shop/parts/shop-header', 'page' ); ?>
   </div>
 
   <!--PRODUCTS SECTION start-->
@@ -30,7 +30,7 @@ get_header(); ?>
     </section>
     <!--PRODUCTS-->    
     <section class="col-9">
-      <?php get_template_part( 'components/all-products-loop', 'page' ); ?>
+      <?php get_template_part( 'shop/filtered-pages/accessories', 'page' ); ?>
     </section>
   </div>
   <!--PRODUCT SECTION end-->
