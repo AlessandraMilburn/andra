@@ -1,22 +1,24 @@
-<div class="container border py-3">
+<div class="container border py-3 mb-3">
     <div class="row">
      <div class="col-4">
-       <img <?php the_post_thumbnail(); ?>/>
+       <?php the_post_thumbnail(); ?>
      </div>
      <div class="col-4 pl-0">
        <div class="row">
          <div class="col-8">
            <a href="<?php the_permalink(); ?>">
-             <h6 class="mb-0"><?php the_title();  ?>Product Name</h6>
+             <h6 class="mb-0"><?php the_title();  ?></h6>
            </a>
-           <p><?php the_excerpt(); ?>product type</p>
-           <p>Product ID: 12345<?php the_ID(); ?></p>
+           <p><?php the_excerpt(); ?></p>
+           <p>SKU: <?php echo the_ID(); ?></p>
          </div>
          <div class="col-4">
-           <p class="price bold-text">$253.00
-           <!--?php
-           $product = get_product(get_the_ID());
-           echo $product->get_price();?>-->
+           <p class="price bold-text">
+            <?php 
+            //Product Variable
+            $product = get_product(get_the_ID());
+            $product_price = $product->get_price();
+            echo wc_price($product_price);?>
            </p>
          </div>
        </div>

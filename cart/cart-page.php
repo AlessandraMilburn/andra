@@ -24,8 +24,24 @@ get_header(); ?>
   <!--PRODUCTS SECTION-->
   <div class="row">
     <section class="col-9">
-      <?php get_template_part( 'cart/item-preview', 'page' ); ?>
+      <?php
+      //grabs the items that's been added to the cart (not set yet)
+          $args = array( 
+          'post_type' => 'product', 
+          'product_cat' => 'dresses', 
+          'orderby' => 'rand' 
+        );
+          $loop = new WP_Query( $args );
+          while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+          
+        <?php get_template_part( 'cart/item-preview', 'page' ); ?>
+        
+        <?php endwhile; ?>
+      <?php wp_reset_query(); ?>
     </section>
+
+
+
     <!--ORDER SUMMARY SECTION-->
     <section class="col-3">
       <?php get_template_part( 'cart/order-summary', 'page' ); ?>
