@@ -188,8 +188,6 @@ ul {
 * 
 */
 
-.hover-under 
-
 .hover li:hover,
 .hover span:hover,
 .hover a:hover,
@@ -205,6 +203,10 @@ ul {
  fill: #F9D8D1;
 }
 
+.hover-fade button:hover {
+  opacity: 0.75;
+  transition: opacity .3s ease-in-out;
+}
 /********************************************** SPACING
 *
 * 

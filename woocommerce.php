@@ -38,12 +38,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
     <!--product summary and action section-->
     <div class="col-4 text-center">
-      <h6 class="text-uppercase mb-0"> <?php the_title(); ?></h6>
+      <h6 class="text-uppercase mb-0 bold-text"> <?php the_title(); ?></h6>
       <span class="m-0"><?php the_excerpt(); ?></span>
 
       <!--Price--> 
       <p class="my-2">
-        <span class="price bold-text" >        
+        <span class="price reg-text" >        
           <?php 
           $product = get_product(get_the_ID());
           $product_price = $product->get_price();
@@ -54,10 +54,10 @@ if ( ! defined( 'ABSPATH' ) ) {
         </span>
       </p>
 
-      <!--Info--> 
+      <!--Delivery and Size info--> 
       <p class=""><a><u>Delivery returns info</u></a> <a><u>Size Guide</u></a></p>
       
-      <!--select size--> 
+      <!--Select Size--> 
       <div class="my-3 px-3 align-self-center">
         <span class="border rounded position-relative p-2">
           <label class="bold-text" for="size">Select your size</label>
@@ -74,15 +74,24 @@ if ( ! defined( 'ABSPATH' ) ) {
           </select>
         </span>
       </div>
-
-        <form class="cart " method="post" enctype="multipart/form-data">
+        <!--Add to cart button-->
+        <form class="cart hover-fade " method="post" enctype="multipart/form-data">
           <input type="hidden" name="add-to-cart" value="<?php echo esc_attr($product->id); ?>">
           <button class="w-75 bg-black white py-2 px-4 light-text" type="submit"> <?php echo $product->single_add_to_cart_text(); ?> </button>
         </form>
 
-      <!--other info and action--> 
+      <!--color--> 
       <div class="row mx-4 my-2">
-        <div class="col-4 h-100 "><p class="mb-0">Color: </p><span class="xs-text m-0">Color</span></div>
+        <div class="col-4 h-100 "><p class="mb-0">Color: </p>
+        <span class="xs-text m-0">
+          <?php 
+          //displaying product attribute - color
+          global $product;
+          $color = array_values( wc_get_product_terms( $product->id, 'pa_color', array( 'fields' => 'names' ) ) ); 
+          $prodcolor =  implode(', ', $color);
+          echo $prodcolor;
+          ?>
+        </span></div>
         <!--Wishlist Button-->
         <div class="col-4 border rounded px-0">
           <button class="row h-100 m-0 p-2">
@@ -92,11 +101,9 @@ if ( ! defined( 'ABSPATH' ) ) {
             </span>
           </button>
         </div>
+        <!--Share Button-->
         <div class="col-4 h-100 d-flex align-self-center justify-content-center"><a><u>SHARE</u></a></div>
-      </div>
-
-
-      
+      </div>      
     </div>
   </section>
   <section class="row my-2">
@@ -114,7 +121,6 @@ if ( ! defined( 'ABSPATH' ) ) {
     </div>
     <div class="col-4 px-4">
       <h6 class="text-uppercase mb-0">Brand Details</h6>
-
       <p>
         This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.
       </p>
