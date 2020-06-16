@@ -1,6 +1,6 @@
       <div class="single-product">
         <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
-        <?php woocommerce_show_product_sale_flash( $post, $product ); ?>
+        <?php // woocommerce_show_product_sale_flash( $post, $product ); ?>
           <div>
             <i class="heart fa fa-heart-o"></i>
           </div>
