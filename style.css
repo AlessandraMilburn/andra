@@ -188,7 +188,7 @@ ul {
 * 
 */
 
-.hover li:hover,
+.hover-under .hover li:hover,
 .hover span:hover,
 .hover a:hover,
 .hover u:hover {

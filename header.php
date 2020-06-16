@@ -35,6 +35,12 @@
               <div class="row d-flex justify-content-end">
                 <div class="col-8 p-1">
                   <?php wp_nav_menu( array( 'theme_location' => 'user-menu' ) );?>
+                  <?php global $woocommerce; ?>
+                  <a class="your-class-name xs-text" href="<?php echo $woocommerce->cart->get_cart_url(); ?>"
+                   title="<?php _e('Cart View', 'woothemes'); ?>">
+                    <?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'),
+                    $woocommerce->cart->cart_contents_count);?>  - <?php echo $woocommerce->cart->get_cart_total(); ?>
+                  </a>
                 </div>
                 <!--div class="col-4 py-3 px-0 xs-text"><span class="bold-text ">(1)</span> ($123.00)</div-->
               </div>
