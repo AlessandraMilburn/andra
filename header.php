@@ -53,7 +53,9 @@
             <div class="container">
               <div class="row mb-0 hover nav-button reg-text ">
                 <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) );?>
-                <div class="col-2"><a>SEARCH BAR</a></div>  
+                <div class="col-2">
+                  <?php get_template_part('components/searchbar', 'page'); ?>
+                </div>  
               </div>     
             </div>  
           <div>

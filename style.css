@@ -233,6 +233,18 @@ ul {
 */
 
 
+/********************************************** BORDERS
+*
+* 
+*/
+
+.border-1 {
+  border: 1px solid #E5E5E5;
+}
+
+.border-r2 {
+  border-radius: 20px;
+}
 
 /********************************************** SEPARATORS
 *
@@ -335,6 +347,8 @@ header {
 
 .menu-header-menu-container {
   width: 80%;
+  display: flex;
+  align-items: center;
 }
 #menu-header-menu {
   display: flex;
