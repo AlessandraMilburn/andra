@@ -1,8 +1,65 @@
 /*
-    Theme Name: Andra by AM
-    Author: Alessandra Milburn
-    Version: 1.0
+  Theme Name: Andra by AM
+  Theme URI:
+  Author: Alessandra Milburn
+  Author URI: https://alessandramilburn.com/
+  Description:
+  Version: 1.0
+  Requires at leasts:
+  Requires PHP:
+  License: 
+  License URI: 
+  Text Domain: 
+  Tags: 
+
+  Some note about the theme to the user
 */
+
+/*
+  color legend
+  white ffffff
+  grey
+  accent color
+  black
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Normalize
+2.0 Accessibility
+3.0 Alignments
+4.0 Clearings
+5.0 Typography
+6.0 Forms
+7.0 Formatting
+8.0 Lists
+9.0 Tables
+10.0 Links
+11.0 Featured Image Hover
+12.0 Navigation
+13.0 Layout
+	13.1 Header
+  13.2 Front Page
+	13.3 Regular Content
+  13.4 Posts
+  13.5 Pages
+	13.6 Footer
+14.0 Comments
+15.0 Widgets
+16.0 Media
+	16.1 Galleries
+17.0 Customizer
+18.0 SVGs Fallbacks
+19.0 Media Queries
+20.0 Print
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Normalize
+Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
+--------------------------------------------------------------*/
+
 
 * {
   margin: 0;
@@ -40,15 +97,57 @@ footer {
   flex-shrink: 0;
 }
 
-/********************************************** STYLE BY ELEMENT 
-*
-* 
+/*--------------------------------------------------------------
+2.0 Accessibility
+Based on URL:
+--------------------------------------------------------------*/
+/*
+.screen-reader-text {
+}
+
+.screen-reader-text:focus {
+}
+
 */
 
-/********************************************** FONTS
-* font-family: 'Cabin', sans-serif;
-* font-family: 'Source Sans Pro', sans-serif;
-*/
+
+/*--------------------------------------------------------------
+3.0 Alignments/Positioning
+--------------------------------------------------------------*/
+
+.right-0 {
+  right: 0;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.ml--10 {
+  margin-left: -10%;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/*--------------------------------------------------------------
+4.0 Clearings
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+5.0 Typography
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  body, button, input, select, textarea, firstchild, blockquote
+  address, pre, code, kbd, tt, var, abbr, acronym, mark, ins, 
+--------------------------------------------------------------*/
 
 h1 {
   font-size: 50px;
@@ -124,10 +223,70 @@ ul {
   background: linear-gradient(to bottom, transparent 80%, #F9D8D1 20%);
 }
 
-/********************************************** COLORS
-*
-* 
-*/
+/* Typography for particular language font: Example Arabic font */
+
+/*--------------------------------------------------------------
+6.0 Forms
+label, fieldset, input and type, textarea, select, button, 
+--------------------------------------------------------------*/
+
+select {
+  color: black;
+}
+
+/*--------------------------------------------------------------
+7.0 Formatting
+--------------------------------------------------------------*/
+
+/* BORDERS */
+
+.border-1 {
+  border: 1px solid #E5E5E5;
+}
+
+.border-r2 {
+  border-radius: 20px;
+}
+
+/* SIZING */
+
+.h-20 {
+  height: 20%;
+}
+
+/* SPACING */
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* STATES */
+
+
+.hover-under .hover li:hover,
+.hover span:hover,
+.hover a:hover,
+.hover u:hover {
+  background: linear-gradient(to bottom, transparent 75%, #F9D8D1 25%);
+}
+
+.hide {
+  display: none;
+}
+
+.x-icon svg {
+ fill: #F9D8D1;
+}
+
+.hover-fade button:hover {
+  opacity: 0.75;
+  transition: opacity .3s ease-in-out;
+}
+
+/* COLORS */
+
 
 .white {
   color: #ffffff;
@@ -183,153 +342,34 @@ ul {
   border-color: #F9D8D1;
 }
 
-/********************************************** STATES
-*
-* 
-*/
 
-.hover-under .hover li:hover,
-.hover span:hover,
-.hover a:hover,
-.hover u:hover {
-  background: linear-gradient(to bottom, transparent 75%, #F9D8D1 25%);
-}
 
-.hide {
-  display: none;
-}
 
-.x-icon svg {
- fill: #F9D8D1;
-}
 
-.hover-fade button:hover {
-  opacity: 0.75;
-  transition: opacity .3s ease-in-out;
-}
-/********************************************** SPACING
-*
-* 
-*/
+/*--------------------------------------------------------------
+8.0 Lists
+--------------------------------------------------------------*/
 
-.space-between {
-  display: flex;
-  justify-content: space-between;
-}
+/*--------------------------------------------------------------
+9.0 Tables
+--------------------------------------------------------------*/
 
-/********************************************** SIZING
-*
-* 
-*/
+/*--------------------------------------------------------------
+10.0 Links
+--------------------------------------------------------------*/
 
-.h-20 {
-  height: 20%;
+button {
+  background-color: transparent;
 }
 
 
-/********************************************** CONTAINERS
-*
-* 
-*/
+/*--------------------------------------------------------------
+11.0 Features Image Hover
+--------------------------------------------------------------*/
 
-
-/********************************************** BORDERS
-*
-* 
-*/
-
-.border-1 {
-  border: 1px solid #E5E5E5;
-}
-
-.border-r2 {
-  border-radius: 20px;
-}
-
-/********************************************** SEPARATORS
-*
-* 
-*/
-
-.line {
-  height: 1px;
-  width: 100%;
-}
-
-/********************************************** POSITION / ALIGNMENT
-*
-* 
-*/
-
-.right-0 {
-  right: 0;
-}
-
-.top-0 {
-  top: 0;
-}
-
-.bottom-0 {
-  bottom: 0;
-}
-
-.ml--10 {
-  margin-left: -10%;
-}
-
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-/********************************************** IMAGES
-*
-* 
-*/
-
-img{
-  width: 100%;
-  height: 100%;
-}
-
-.autocrop {
-  overflow: hidden;
-
-}
-
-.social img {
-  width: 20px;
-}
-
-
-/* GALLERY */
-
-.product-gallery img {
-  opacity: 0.8; 
-  cursor: pointer; 
-}
-
-.product-gallery img:hover {
-  opacity: 1;
-}
-
-
-
-/********************************************** STYLE BY SECTION
-*
-* 
-*/
-
-/********************************************** HEADER & NAV
-*
-* 
-*/
-
-/* Header */
-
-header {
-  height: 150px;
-}
+/*--------------------------------------------------------------
+12.0 Navigation
+--------------------------------------------------------------*/
 
 #nav {
   background-repeat: no-repeat;
@@ -376,11 +416,7 @@ header {
 
 #menu-user-menu li {
   margin: 0% 2.5%; 
- }
-
-
-
-
+}
 
 /* Announcement */
 
@@ -392,39 +428,47 @@ header {
   padding: .25% 0%;
 }
 
-/********************************************** BLOG PREVIEWS
-*
-* 
-*/
 
-.featured-img1 {
-  height: 500px;
-}
+/*--------------------------------------------------------------
+13.0 Layout
+--------------------------------------------------------------*/
 
-.featured-img2 {
-  height: 450px;
-  margin-top: 25px;
-}
+/* SEPARATORS */
 
-/********************************************** COMPONENTS
-*
-* 
-*/
-
-#payment-methods img {
-  width: 40px;
-  margin: 0% 1%;
+.line {
+  height: 1px;
+  width: 100%;
 }
 
 
-button {
-  background-color: transparent;
-}
-/********************************************** SINGLE PRODUCT
-*
-* 
-*/
+/*--------------------------------------------------------------
+13.1 Headers
+--------------------------------------------------------------*/
 
+/* Header */
+
+header {
+  height: 150px;
+}
+
+
+/*--------------------------------------------------------------
+13.2 Front Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+13.3 Regular Content
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+13.4 Posts
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+13.5 Pages
+--------------------------------------------------------------*/
+
+/* SINGLE PRODUCT */
 .single-product a:hover {
   text-decoration: none;
 }
@@ -442,39 +486,8 @@ button {
 }
 
 
-/********************************************** Filter
-*
-* 
-*/
 
-.size button {
-  width: 40%;
-  padding: 2% 4%;
-  margin: 1%;
-  border: #696969 solid .5px;
-
-}
-
-/********************************************** Select Form
-*
-* 
-*/
-
-
-select {
-  color: black;
-}
-
-/********************************************** USER PAGE
-*
-* 
-*/
-
-
-/********************************************** CART
-*
-* 
-*/
+/* CART */
 
 .cart-contents:before {
   content: "\e01d";
@@ -499,14 +512,92 @@ select {
   vertical-align: top;
 }
 
+/* FILTER */
 
 
-/* ------------------------------------------------------------------*/
-/* --------------------------------------------------------------PROMO*/
-/* ------------------------------------------------------------------*/
+.size button {
+  width: 40%;
+  padding: 2% 4%;
+  margin: 1%;
+  border: #696969 solid .5px;
+
+}
 
 
+/*--------------------------------------------------------------
+13.6 Footers
+--------------------------------------------------------------*/
 
-/* ------------------------------------------------------------------*/
-/* ----------------------------------------------------RESPONSIVENESS*/
-/* ------------------------------------------------------------------*/
+/*--------------------------------------------------------------
+14.0 Comments
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+15.0 Widgets
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+16.0 Media
+--------------------------------------------------------------*/
+
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.autocrop {
+  overflow: hidden;
+
+}
+
+.social img {
+  width: 20px;
+}
+
+#payment-methods img {
+  width: 40px;
+  margin: 0% 1%;
+}
+
+/* BLOG PREVIEWS */
+
+.featured-img1 {
+  height: 500px;
+}
+
+.featured-img2 {
+  height: 450px;
+  margin-top: 25px;
+}
+
+/*--------------------------------------------------------------
+16.1 Galleries
+--------------------------------------------------------------*/
+
+/* GALLERY */
+
+.product-gallery img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.product-gallery img:hover {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+17.0 Customizer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+18.0 SVGs Fallbacks
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+19.0 Media Queries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+20.0 Print
+--------------------------------------------------------------*/
