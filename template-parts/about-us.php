@@ -18,20 +18,20 @@ get_header(); ?>
   <div class="row">
     <!--SORT & FILTER-->
     <section class="col-2 position-sticky">
-        <?php get_template_part( 'about-us/filter', 'page' ); ?>
+        <?php get_template_part( 'template-parts/page/about-us/filter', 'page' ); ?>
     </section>
     <!--CONTENT start-->    
     <section class="col-10">
       <div class="container">
         <?php 
         if (is_page('about-us')) {
-          get_template_part( 'about-us/parts/about-us', 'page' ); 
+          get_template_part( 'template-parts/page/about-us/about-us', 'page' ); 
         } else if (is_page('careers')) {
-          get_template_part( 'about-us/parts/careers', 'page' ); 
+          get_template_part( 'template-parts/page/about-us/careers', 'page' ); 
         } else if (is_page('sitemap')) {
-          get_template_part( 'about-us/parts/sitemap', 'page' ); 
+          get_template_part( 'template-parts/page/about-us/sitemap', 'page' ); 
         } else {
-          get_template_part( 'about-us/parts/affiliate-program', 'page' );
+          get_template_part( 'template-parts/page/about-us/affiliate-program', 'page' );
         } ?>
       </div>      
     </section>

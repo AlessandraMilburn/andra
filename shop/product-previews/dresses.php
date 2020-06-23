@@ -14,7 +14,7 @@
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
         <div class="col-3">
-        <?php get_template_part( 'components/single-product', 'page' ); ?>
+        <?php get_template_part( 'template-parts/components/single-product', 'page' ); ?>
         </div>
         </a>
     <?php endwhile; ?>
